@@ -4,3 +4,6 @@ Media
 - https://pixabay.com
 - codepen.io
 
+OBS Plugins:
+ - Move: https://github.com/exeldro/obs-move-transition/releases/tag/3.2.1
+ - Advanced Masks https://github.com/FiniteSingularity/obs-advanced-masks/releases/tag/v1.5.4

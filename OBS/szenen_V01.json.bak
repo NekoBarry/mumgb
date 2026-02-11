@@ -109,8 +109,7 @@
                 "transition_out": "None",
                 "name_part_match": false,
                 "name_number_match": false,
-                "position_out": 0,
-                "position_in": 0
+                "position_out": 96
             }
         }
     ],
@@ -388,8 +387,8 @@
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "text": "lorem ipsum  | lorem ipusm | lorem ipsum | lorem ipsum | lorem ipsum | lorem ipsum |",
-                "vertical": false,
-                "transform": 1
+                "transform": 1,
+                "vertical": false
             },
             "mixers": 0,
             "sync": 0,
@@ -708,6 +707,9 @@
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "text": "LIVE",
+                "color": 4278190335,
+                "bk_color": 4278255615,
+                "bk_opacity": 0,
                 "vertical": false,
                 "outline": false,
                 "chatlog": false,
@@ -716,10 +718,7 @@
                     "style": "Bold",
                     "size": 256,
                     "flags": 1
-                },
-                "color": 4278190335,
-                "bk_color": 4278255615,
-                "bk_opacity": 0
+                }
             },
             "mixers": 0,
             "sync": 0,
@@ -960,19 +959,19 @@
                         "id": 17,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 378.5,
+                            "x": 269.0,
                             "y": 846.0
                         },
                         "pos_rel": {
-                            "x": -1.0772825479507446,
+                            "x": -1.2795339822769165,
                             "y": 0.5666667222976685
                         },
                         "scale": {
-                            "x": -0.2852109670639038,
+                            "x": 0.05608849972486496,
                             "y": 0.30000001192092896
                         },
                         "scale_rel": {
-                            "x": -0.2852109670639038,
+                            "x": 0.05608849972486496,
                             "y": 0.30000001192092896
                         },
                         "bounds": {
@@ -1283,27 +1282,27 @@
                         "bounds_type": 0,
                         "bounds_align": 0,
                         "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
+                        "crop_left": 42,
+                        "crop_top": 112,
+                        "crop_right": 110,
                         "crop_bottom": 0,
                         "id": 3,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1164.0,
-                            "y": 257.0
+                            "x": 1116.0,
+                            "y": 242.0
                         },
                         "pos_rel": {
-                            "x": 0.3777777850627899,
-                            "y": -0.5240740776062012
+                            "x": 0.2888889014720917,
+                            "y": -0.5518518686294556
                         },
                         "scale": {
-                            "x": 1.1953125,
-                            "y": 1.1958333253860474
+                            "x": 1.5840164422988892,
+                            "y": 1.58423912525177
                         },
                         "scale_rel": {
-                            "x": 1.1953125,
-                            "y": 1.1958333253860474
+                            "x": 1.5840164422988892,
+                            "y": 1.58423912525177
                         },
                         "bounds": {
                             "x": 0.0,
@@ -1351,6 +1350,8 @@
                 "libobs.hide_scene_item.5": [],
                 "libobs.show_scene_item.10": [],
                 "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.18": [],
                 "libobs.hide_scene_item.18": [],
                 "libobs.show_scene_item.17": [],
@@ -1359,14 +1360,12 @@
                 "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.20": [],
                 "libobs.hide_scene_item.20": [],
-                "libobs.show_scene_item.23": [],
-                "libobs.hide_scene_item.23": [],
                 "libobs.show_scene_item.22": [],
                 "libobs.hide_scene_item.22": [],
+                "libobs.show_scene_item.23": [],
+                "libobs.hide_scene_item.23": [],
                 "libobs.show_scene_item.24": [],
-                "libobs.hide_scene_item.24": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": []
+                "libobs.hide_scene_item.24": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1413,15 +1412,15 @@
                             "bottom": 0.0,
                             "bottom_sign": " "
                         },
-                        "next_move": "Move Source 2",
-                        "duration": 1000
+                        "duration": 1000,
+                        "next_move": "Move Source 2"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -1471,16 +1470,16 @@
                             "bottom": 0.0,
                             "bottom_sign": " "
                         },
+                        "duration": 1000,
                         "next_move": "Move Source",
-                        "transform_text": "pos: x 383.0 y 846.0 rot: 0.0 scale: x -0.300 y 0.300 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1000
+                        "transform_text": "pos: x 383.0 y 846.0 rot: 0.0 scale: x -0.300 y 0.300 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -1531,7 +1530,7 @@
                         },
                         "source": "lower_third_ext",
                         "change_visibility": 0,
-                        "transform_text": "pos: x 146.0 y 852.0 rot: 0.0 scale: x 0.000 y 0.885 crop: l 116 t 500 r 123 b 545"
+                        "transform_text": "pos: x 146.0 y 852.0 rot: 0.0 scale: x 0.000 y 0.885 bounds: x 1.000 y 1.000 crop: l 116 t 500 r 123 b 545"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -1589,9 +1588,9 @@
                         },
                         "source": "lower_third_ext",
                         "change_visibility": 0,
+                        "duration": 600,
                         "start_trigger": 0,
-                        "transform_text": "pos: x 146.0 y 852.0 rot: 0.0 scale: x 1.562 y 0.885 crop: l 116 t 500 r 123 b 545",
-                        "duration": 600
+                        "transform_text": "pos: x 146.0 y 852.0 rot: 0.0 scale: x 1.562 y 0.885 bounds: x 1.000 y 1.000 crop: l 116 t 500 r 123 b 545"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -1721,63 +1720,7 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 536870916,
-                    "name": "Advanced Mask",
-                    "uuid": "b445fbfe-7e78-4063-bf11-b14e4deeaa9b",
-                    "id": "advanced_masks_filter",
-                    "versioned_id": "advanced_masks_filter_v2",
-                    "settings": {
-                        "rectangle_corner_type": 1,
-                        "shape_feather_type": 1,
-                        "shape_center_x": 320.0,
-                        "position_x": 320.0,
-                        "shape_center_y": 240.0,
-                        "position_y": 240.0,
-                        "mask_gradient_position": 320.0,
-                        "mask_source_width": 640,
-                        "mask_source_height": 480,
-                        "shape_type": 1,
-                        "circle_radius": 281.0,
-                        "mask_type": 1,
-                        "source_zoom": 100.0,
-                        "rectangle_corner_radius": 41.0,
-                        "shape_relative": false,
-                        "shape_invert": false,
-                        "rectangle_width": 519.0,
-                        "rectangle_height": 451.0,
-                        "shape_feather_amount": 28.0,
-                        "mask_source_mask_properties_list": 1,
-                        "mask_source_compression_list": 1,
-                        "mask_gradient_width": 2760.0,
-                        "key_type": 1,
-                        "mask_feather_size": 2.0,
-                        "mask_svg_scale_by": 1,
-                        "shape_num_sides": 8,
-                        "shape_corner_radius": 0.0,
-                        "super_squircle_curvature": 7.115,
-                        "super_squircle_size": 469.0
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
+            "private_settings": {}
         },
         {
             "prev_ver": 536870916,
