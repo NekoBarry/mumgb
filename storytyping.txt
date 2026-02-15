@@ -1,17 +1,29 @@
-[Prolog]
+[Intro]
+
+wenn ready dann
+
+[szene: 20th Cenutieuiuiuie]
+
+danach
+
+[szene: Begin, Focus on Mod]
 
 Guten Abend meine Damen und Herren,
 
+[szene short_news]
 //3 Themen raushauen
-- am Gonzberch sind die Gänz ausgegangen. Sie sind wohl endlich auf Zuchspitz angekommen. Bewohner sind empört und entsetzt. Das viertel ist nun nichts weiter als eine Straße am Hügel. Es soll eine Volksabstimmung nur Umbennung geben.
+- am Gonzberch sind die Gänz ausgegangen. Sie sind wohl endlich auf Zuchspitz angekommen. Bewohner sind empört und entsetzt. Das viertel ist nun nichts weiter als eine Straße am Hügel. Es soll eine Volksabstimmung zur Umbennung geben.
 John Lennon behauptet allen ernstes vor dem Londoner Evening Standard die Beatles sein "More Popular than Jesus".
 Ein Reissack ist umgefallen. Mao Zedung ist empört und startet die "Große Proletarische Kulturrevolution" in China.
 
-und damit herzlich willkommen zu einer Sondersendung der lokalnachrichten "Fürth News", meine Name ist Martin Heuger und das sind unsere Themen:
+und damit herzlich willkommen zu einer Sondersendung der lokalnachrichten "Fürth News", meine Name ist Martin Heuger.
+
+/*und das sind unsere Themen:
 
 - Worin besteht der Unterschied zwischen einer Annanas und einer tüte lauwarmes Wasser?
 - 
-- und unser heutiges Top Thema:
+- und unser heutiges Top Thema:*/
+[szene szene003]
 Protrait einer wilden Zeit, einer Mutter und viel Unsinn.
 
 Alles beginnt am 17.03.1966 als ein Opel Kapitän, am Steuer ein bereits in dieser Situation rutinierter Fahrer, einer unter Druck stehenden Beifahrerin und einem heißem Feuer, welches in nicht allzuweiter Ferne nun endlich auflodern sollte, in richtung des Nathanstifts unterwegs ist. Ihre Fracht war kein Geld um dies etwa zu Stiften, vielmehr war es das Ergebnis der niemals sillstehenden Naturgewalt in Form des Lebens. 
