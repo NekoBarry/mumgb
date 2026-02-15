@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "szene004",
-    "current_program_scene": "szene004",
+    "current_scene": "short_news 3",
+    "current_program_scene": "short_news 3",
     "scene_order": [
         {
             "name": "Intro"
@@ -86,10 +86,10 @@
             "name": "szene003"
         },
         {
-            "name": "szene001"
+            "name": "szene004"
         },
         {
-            "name": "szene004"
+            "name": "szene001"
         },
         {
             "name": "szene002"
@@ -189,58 +189,6 @@
     },
     "version": 2,
     "sources": [
-        {
-            "prev_ver": 536870916,
-            "name": "003_mama_03",
-            "uuid": "70f2b03c-1d03-409e-9477-241fef8fbebc",
-            "id": "image_source",
-            "versioned_id": "image_source",
-            "settings": {
-                "file": "C:/Lokale Bilder/mama/szene03/Image_029.png"
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "003_mama_baby",
-            "uuid": "fc5d4daf-6a28-42d0-b1f6-f4d8072ab453",
-            "id": "image_source",
-            "versioned_id": "image_source",
-            "settings": {
-                "file": "C:/Lokale Bilder/mama/szene03/Image_080.png"
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
         {
             "prev_ver": 536870916,
             "name": "20th Cenurieuiuiue",
@@ -2192,20 +2140,20 @@
                         "id": 17,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 641.5,
+                            "x": 640.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5898752808570862,
+                            "x": -0.5917297601699829,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05617351084947586,
-                            "y": 0.06308683007955551
+                            "x": -0.05305645614862442,
+                            "y": 0.06308454275131226
                         },
                         "scale_rel": {
-                            "x": -0.05617351084947586,
-                            "y": 0.06308683007955551
+                            "x": -0.05305645614862442,
+                            "y": 0.06308454275131226
                         },
                         "bounds": {
                             "x": 0.0,
@@ -2716,7 +2664,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2775,7 +2723,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -3094,11 +3042,11 @@
                         },
                         "scale": {
                             "x": 0.22952380776405334,
-                            "y": 0.22949425876140594
+                            "y": 0.2294853925704956
                         },
                         "scale_rel": {
                             "x": 0.22952380776405334,
-                            "y": 0.22949425876140594
+                            "y": 0.2294853925704956
                         },
                         "bounds": {
                             "x": 0.0,
@@ -3188,8 +3136,7 @@
                     "settings": {
                         "limit_cy": false,
                         "speed_y": 500,
-                        "cy": 3620,
-                        "loop": true
+                        "cy": 3620
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -3469,19 +3416,19 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 53.0,
-                            "y": 108.0
+                            "y": -45.0
                         },
                         "pos_rel": {
                             "x": -1.6796296834945679,
-                            "y": -0.800000011920929
+                            "y": -1.0833333730697632
                         },
                         "scale": {
-                            "x": 0.8057291507720947,
-                            "y": 0.8055555820465088
+                            "x": 0.9468749761581421,
+                            "y": 0.9472222328186035
                         },
                         "scale_rel": {
-                            "x": 0.8057291507720947,
-                            "y": 0.8055555820465088
+                            "x": 0.9468749761581421,
+                            "y": 0.9472222328186035
                         },
                         "bounds": {
                             "x": 0.0,
@@ -3688,20 +3635,20 @@
                         "id": 8,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1320.0,
-                            "y": 107.0
+                            "x": 1439.0,
+                            "y": 179.5
                         },
                         "pos_rel": {
-                            "x": 0.6666666865348816,
-                            "y": -0.8018518686294556
+                            "x": 0.8871867060661316,
+                            "y": -0.6675925850868225
                         },
                         "scale": {
-                            "x": 0.8836363554000854,
-                            "y": 0.8831169009208679
+                            "x": 0.6775757670402527,
+                            "y": 0.677489161491394
                         },
                         "scale_rel": {
-                            "x": 0.8836363554000854,
-                            "y": 0.8831169009208679
+                            "x": 0.6775757670402527,
+                            "y": 0.677489161491394
                         },
                         "bounds": {
                             "x": 0.0,
@@ -3966,19 +3913,19 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 53.0,
-                            "y": 107.0
+                            "y": -45.0
                         },
                         "pos_rel": {
                             "x": -1.6796296834945679,
-                            "y": -0.8018518686294556
+                            "y": -1.0833333730697632
                         },
                         "scale": {
-                            "x": 0.8057291507720947,
-                            "y": 0.8055555820465088
+                            "x": 0.9468749761581421,
+                            "y": 0.9472222328186035
                         },
                         "scale_rel": {
-                            "x": 0.8057291507720947,
-                            "y": 0.8055555820465088
+                            "x": 0.9468749761581421,
+                            "y": 0.9472222328186035
                         },
                         "bounds": {
                             "x": 0.0,
@@ -4130,12 +4077,12 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1334.0,
-                            "y": 282.0
+                            "x": 1415.0,
+                            "y": 194.0
                         },
                         "pos_rel": {
-                            "x": 0.6925926208496094,
-                            "y": -0.47777777910232544
+                            "x": 0.8425925970077515,
+                            "y": -0.6407407522201538
                         },
                         "scale": {
                             "x": 0.6307054162025452,
@@ -4343,19 +4290,19 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 53.0,
-                            "y": 108.0
+                            "y": -45.0
                         },
                         "pos_rel": {
                             "x": -1.6796296834945679,
-                            "y": -0.800000011920929
+                            "y": -1.0833333730697632
                         },
                         "scale": {
-                            "x": 0.8057291507720947,
-                            "y": 0.8055555820465088
+                            "x": 0.9468749761581421,
+                            "y": 0.9472222328186035
                         },
                         "scale_rel": {
-                            "x": 0.8057291507720947,
-                            "y": 0.8055555820465088
+                            "x": 0.9468749761581421,
+                            "y": 0.9472222328186035
                         },
                         "bounds": {
                             "x": 0.0,
@@ -4507,12 +4454,12 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1263.5,
-                            "y": 442.0
+                            "x": 1330.5,
+                            "y": 332.0
                         },
                         "pos_rel": {
-                            "x": 0.5620370507240295,
-                            "y": -0.1814814805984497
+                            "x": 0.6861110925674438,
+                            "y": -0.385185182094574
                         },
                         "scale": {
                             "x": 1.0,
@@ -4586,7 +4533,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 10,
+                "id_counter": 9,
                 "items": [
                     {
                         "name": "bg_video",
@@ -4664,11 +4611,11 @@
                         "id": 2,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
+                            "x": -1.0,
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
+                            "x": -1.7796295881271362,
                             "y": -1.0
                         },
                         "scale": {
@@ -4774,20 +4721,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 641.5,
+                            "x": 607.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5898752808570862,
+                            "x": -0.6538345813751221,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05617351084947586,
-                            "y": 0.06308683007955551
+                            "x": 0.051326144486665726,
+                            "y": 0.06300784647464752
                         },
                         "scale_rel": {
-                            "x": -0.05617351084947586,
-                            "y": 0.06308683007955551
+                            "x": 0.051326144486665726,
+                            "y": 0.06300784647464752
                         },
                         "bounds": {
                             "x": 0.0,
@@ -5349,8 +5296,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -5567,20 +5514,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 641.5,
+                            "x": 607.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5898752808570862,
+                            "x": -0.6538345813751221,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05617351084947586,
-                            "y": 0.06308683007955551
+                            "x": 0.051326144486665726,
+                            "y": 0.06300784647464752
                         },
                         "scale_rel": {
-                            "x": -0.05617351084947586,
-                            "y": 0.06308683007955551
+                            "x": 0.051326144486665726,
+                            "y": 0.06300784647464752
                         },
                         "bounds": {
                             "x": 0.0,
@@ -6142,8 +6089,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -6172,7 +6119,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 13,
+                "id_counter": 11,
                 "items": [
                     {
                         "name": "bg_video",
@@ -6285,61 +6232,6 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "003_mama_baby",
-                        "source_uuid": "fc5d4daf-6a28-42d0-b1f6-f4d8072ab453",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 12,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 57.0,
-                            "y": 312.0
-                        },
-                        "pos_rel": {
-                            "x": -1.6722222566604614,
-                            "y": -0.42222219705581665
-                        },
-                        "scale": {
-                            "x": 0.15299999713897705,
-                            "y": 0.15299999713897705
-                        },
-                        "scale_rel": {
-                            "x": 0.15299999713897705,
-                            "y": 0.15299999713897705
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
                         "name": "Mama_in_groß",
                         "source_uuid": "dfc146c1-f1c0-4a17-8e00-c0266e9e2055",
                         "visible": true,
@@ -6393,61 +6285,6 @@
                             "duration": 0
                         },
                         "private_settings": {}
-                    },
-                    {
-                        "name": "003_mama_03",
-                        "source_uuid": "70f2b03c-1d03-409e-9477-241fef8fbebc",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 13,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 1328.0,
-                            "y": 463.0
-                        },
-                        "pos_rel": {
-                            "x": 0.6814814805984497,
-                            "y": -0.14259260892868042
-                        },
-                        "scale": {
-                            "x": 0.1860000044107437,
-                            "y": 0.1860000044107437
-                        },
-                        "scale_rel": {
-                            "x": 0.1860000044107437,
-                            "y": 0.1860000044107437
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
                     }
                 ]
             },
@@ -6469,272 +6306,15 @@
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": [],
-                "libobs.show_scene_item.12": [],
-                "libobs.hide_scene_item.12": [],
-                "Baby_ausblenden": [],
-                "Baby_ausblenden Hold": [],
-                "Baby_einblenden": [],
-                "Baby_einblenden Hold": [],
-                "libobs.show_scene_item.13": [],
-                "libobs.hide_scene_item.13": [],
-                "03_ausblenden": [],
-                "03_ausblenden Hold": [],
-                "03_einblenden": [],
-                "03_einblenden Hold": []
+                "libobs.hide_scene_item.10": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {
-                "transition": "Verschieben",
-                "transition_duration": 1500
-            },
-            "filters": [
-                {
-                    "prev_ver": 536870916,
-                    "name": "Baby_ausblenden",
-                    "uuid": "bded3115-4b0a-4f35-bf5a-ad59f2d6a344",
-                    "id": "move_source_filter",
-                    "versioned_id": "move_source_filter",
-                    "settings": {
-                        "transform_text": "pos: x 57.0 y 312.0 rot: 0.0 scale: x 0 y 0 crop: l 0 t 0 r 0 b 0",
-                        "rot": 0.0,
-                        "rot_sign": " ",
-                        "pos": {
-                            "x": 57.0,
-                            "x_sign": " ",
-                            "y": 312.0,
-                            "y_sign": " "
-                        },
-                        "scale": {
-                            "x": 0.0,
-                            "x_sign": " ",
-                            "y": 0.0,
-                            "y_sign": " "
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "x_sign": " ",
-                            "y": 0.0,
-                            "y_sign": " "
-                        },
-                        "crop": {
-                            "left": 0.0,
-                            "left_sign": " ",
-                            "top": 0.0,
-                            "top_sign": " ",
-                            "right": 0.0,
-                            "right_sign": " ",
-                            "bottom": 0.0,
-                            "bottom_sign": " "
-                        },
-                        "source": "003_mama_baby",
-                        "start_delay": 0,
-                        "duration": 1500,
-                        "custom_duration": false,
-                        "start_trigger": 1,
-                        "next_move": "Baby_einblenden"
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 536870916,
-                    "name": "Baby_einblenden",
-                    "uuid": "0dcf6445-c0c1-41a5-a825-0d41d5960d61",
-                    "id": "move_source_filter",
-                    "versioned_id": "move_source_filter",
-                    "settings": {
-                        "rot": 0.0,
-                        "rot_sign": " ",
-                        "pos": {
-                            "x": 57.0,
-                            "x_sign": " ",
-                            "y": 312.0,
-                            "y_sign": " "
-                        },
-                        "scale": {
-                            "x": 0.15299999713897705,
-                            "x_sign": " ",
-                            "y": 0.15299999713897705,
-                            "y_sign": " "
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "x_sign": " ",
-                            "y": 0.0,
-                            "y_sign": " "
-                        },
-                        "crop": {
-                            "left": 0.0,
-                            "left_sign": " ",
-                            "top": 0.0,
-                            "top_sign": " ",
-                            "right": 0.0,
-                            "right_sign": " ",
-                            "bottom": 0.0,
-                            "bottom_sign": " "
-                        },
-                        "source": "003_mama_baby",
-                        "start_delay": 2000,
-                        "duration": 1500,
-                        "transform_text": "pos: x 57.0 y 312.0 rot: 0.0 scale: x 0.153 y 0.153 crop: l 0 t 0 r 0 b 0",
-                        "next_move": "03_einblenden"
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 536870916,
-                    "name": "03_ausblenden",
-                    "uuid": "6727aded-9714-4229-a9da-8fc3a668cfa6",
-                    "id": "move_source_filter",
-                    "versioned_id": "move_source_filter",
-                    "settings": {
-                        "transform_text": "pos: x 1328.0 y 463.0 rot: 0.0 scale: x 0 y 0 crop: l 0 t 0 r 0 b 0",
-                        "rot": 0.0,
-                        "rot_sign": " ",
-                        "pos": {
-                            "x": 1328.0,
-                            "x_sign": " ",
-                            "y": 463.0,
-                            "y_sign": " "
-                        },
-                        "scale": {
-                            "x": 0.0,
-                            "x_sign": " ",
-                            "y": 0.0,
-                            "y_sign": " "
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "x_sign": " ",
-                            "y": 0.0,
-                            "y_sign": " "
-                        },
-                        "crop": {
-                            "left": 0.0,
-                            "left_sign": " ",
-                            "top": 0.0,
-                            "top_sign": " ",
-                            "right": 0.0,
-                            "right_sign": " ",
-                            "bottom": 0.0,
-                            "bottom_sign": " "
-                        },
-                        "source": "003_mama_03",
-                        "duration": 300,
-                        "change_visibility": 0,
-                        "start_delay": 0,
-                        "start_trigger": 1,
-                        "custom_duration": false
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 536870916,
-                    "name": "03_einblenden",
-                    "uuid": "cffb9f3c-11e1-4ed0-90b1-757e4aa072f0",
-                    "id": "move_source_filter",
-                    "versioned_id": "move_source_filter",
-                    "settings": {
-                        "transform_text": "pos: x 1328.0 y 463.0 rot: 0.0 scale: x 0.186 y 0.186 crop: l 0 t 0 r 0 b 0",
-                        "rot": 0.0,
-                        "rot_sign": " ",
-                        "pos": {
-                            "x": 1328.0,
-                            "x_sign": " ",
-                            "y": 463.0,
-                            "y_sign": " "
-                        },
-                        "scale": {
-                            "x": 0.1860000044107437,
-                            "x_sign": " ",
-                            "y": 0.1860000044107437,
-                            "y_sign": " "
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "x_sign": " ",
-                            "y": 0.0,
-                            "y_sign": " "
-                        },
-                        "crop": {
-                            "left": 0.0,
-                            "left_sign": " ",
-                            "top": 0.0,
-                            "top_sign": " ",
-                            "right": 0.0,
-                            "right_sign": " ",
-                            "bottom": 0.0,
-                            "bottom_sign": " "
-                        },
-                        "source": "003_mama_03",
-                        "duration": 1500
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
+                "transition": "Verschieben"
+            }
         },
         {
             "prev_ver": 536870916,
@@ -6932,20 +6512,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 641.5,
+                            "x": 640.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5898752808570862,
+                            "x": -0.5917297601699829,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05617351084947586,
-                            "y": 0.06308683007955551
+                            "x": -0.05305645614862442,
+                            "y": 0.06308454275131226
                         },
                         "scale_rel": {
-                            "x": -0.05617351084947586,
-                            "y": 0.06308683007955551
+                            "x": -0.05305645614862442,
+                            "y": 0.06308454275131226
                         },
                         "bounds": {
                             "x": 0.0,
@@ -7132,61 +6712,6 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "dia_szene_04",
-                        "source_uuid": "e643cd88-2acd-4fdd-b55a-9b3216bcd9f5",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 10,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 51.0,
-                            "y": 78.0
-                        },
-                        "pos_rel": {
-                            "x": -1.6833332777023315,
-                            "y": -0.855555534362793
-                        },
-                        "scale": {
-                            "x": 0.6401041746139526,
-                            "y": 0.6398147940635681
-                        },
-                        "scale_rel": {
-                            "x": 0.6401041746139526,
-                            "y": 0.6398147940635681
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
                         "name": "Mod_Cam",
                         "source_uuid": "3a0f3ffb-1dbe-4b19-b785-7174a85417d8",
                         "visible": true,
@@ -7221,6 +6746,61 @@
                         "scale_rel": {
                             "x": 0.6104166507720947,
                             "y": 0.6101852059364319
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "dia_szene_04",
+                        "source_uuid": "e643cd88-2acd-4fdd-b55a-9b3216bcd9f5",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 10,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 51.0,
+                            "y": 78.0
+                        },
+                        "pos_rel": {
+                            "x": -1.6833332777023315,
+                            "y": -0.855555534362793
+                        },
+                        "scale": {
+                            "x": 0.6401041746139526,
+                            "y": 0.6398147940635681
+                        },
+                        "scale_rel": {
+                            "x": 0.6401041746139526,
+                            "y": 0.6398147940635681
                         },
                         "bounds": {
                             "x": 0.0,
@@ -7326,15 +6906,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -7385,15 +6965,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
