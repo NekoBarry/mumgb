@@ -1,3 +1,14 @@
+[Das war eine Sondersendung über]
+Eine Mädchen
+Eine Mama
+Eine Oma
+
+Gisela Schönegger
+
+
+
+
+
 [Wer hats verbrochen]
 Alex Heuger
 Martin Heuger
@@ -20,7 +31,6 @@ Jürgen Heuger
 [Wer hat keine Ahnung was sie tun]
 Alex Heuger
 
-
 na gut...
 
 Martin Heuger
@@ -37,37 +47,4 @@ das wissen wir nicht mehr
 
 
 
-
-
-
-[OUTRO]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.
+[THE END]
