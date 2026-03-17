@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "szene002",
-    "current_program_scene": "szene002",
+    "current_scene": "template",
+    "current_program_scene": "template",
     "scene_order": [
         {
             "name": "Intro"
@@ -1519,6 +1519,10 @@
                 "disable_cam Hold": [],
                 "Move Action": [],
                 "Move Action Hold": [],
+                "stop_bg_sound": [],
+                "stop_bg_sound Hold": [],
+                "start_bg_sound": [],
+                "start_bg_sound Hold": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -1527,16 +1531,12 @@
                 "libobs.hide_scene_item.10": [],
                 "libobs.show_scene_item.13": [],
                 "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.19": [],
+                "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.14": [],
                 "libobs.hide_scene_item.14": [],
                 "libobs.show_scene_item.18": [],
-                "libobs.hide_scene_item.18": [],
-                "libobs.show_scene_item.19": [],
-                "libobs.hide_scene_item.19": [],
-                "Move Source": [],
-                "Move Source Hold": [],
-                "stop_bg_sound": [],
-                "stop_bg_sound Hold": []
+                "libobs.hide_scene_item.18": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1625,8 +1625,8 @@
                         "sceneitem": "bg_audio_mod",
                         "enable": 1,
                         "start_trigger": 1,
-                        "duration": 10000,
-                        "next_move": "start_bg_sound"
+                        "next_move": "start_bg_sound",
+                        "duration": 10000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -4839,10 +4839,10 @@
                         "next_move": "outro_text_nach_oben",
                         "end_delay": 0,
                         "change_visibility": 5,
-                        "transform_text": "pos: x 650.0 y 1095.0 rot: 0.0 scale: x 0.288 y 0.288 crop: l 0 t 0 r 0 b 0",
                         "duration": 3000,
                         "custom_duration": false,
-                        "easing_match": 0
+                        "easing_match": 0,
+                        "transform_text": "pos: x 650.0 y 1095.0 rot: 0.0 scale: x 0.288 y 0.288 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -5096,7 +5096,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 25,
+                "id_counter": 27,
                 "custom_size": false,
                 "items": [
                     {
@@ -5615,28 +5615,28 @@
                         "id": 14,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 386.5,
-                            "y": 899.5
+                            "x": 388.5,
+                            "y": 933.5
                         },
                         "pos_rel": {
-                            "x": -1.0620369911193848,
-                            "y": 0.6657407283782959
+                            "x": -1.0583332777023315,
+                            "y": 0.7287037372589111
                         },
                         "scale": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.3580000102519989,
+                            "y": 0.36000001430511475
                         },
                         "scale_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.3580000102519989,
+                            "y": 0.36000001430511475
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -5898,12 +5898,12 @@
                             "y": -0.4722222089767456
                         },
                         "scale": {
-                            "x": 0.33125001192092896,
-                            "y": 0.3314814865589142
+                            "x": 0.6776041388511658,
+                            "y": 0.6777777671813965
                         },
                         "scale_rel": {
-                            "x": 0.33125001192092896,
-                            "y": 0.3314814865589142
+                            "x": 0.6776041388511658,
+                            "y": 0.6777777671813965
                         },
                         "bounds": {
                             "x": 0.0,
@@ -6063,12 +6063,12 @@
                             "y": -0.6962963342666626
                         },
                         "scale": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.4950000047683716,
+                            "y": 0.4950000047683716
                         },
                         "scale_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.4950000047683716,
+                            "y": 0.4950000047683716
                         },
                         "bounds": {
                             "x": 0.0,
@@ -6198,6 +6198,116 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "vid_guenter",
+                        "source_uuid": "85cd22a0-b30b-48da-bd78-b72bde14fbca",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 26,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 51.0,
+                            "y": 164.5
+                        },
+                        "pos_rel": {
+                            "x": -1.6833332777023315,
+                            "y": -0.6953703761100769
+                        },
+                        "scale": {
+                            "x": 1.5377358198165894,
+                            "y": 1.5376569032669067
+                        },
+                        "scale_rel": {
+                            "x": 1.5377358198165894,
+                            "y": 1.5376569032669067
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "txt_guenter",
+                        "source_uuid": "cd83695b-3d26-40cf-a283-2193874073a5",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 27,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1388.0,
+                            "y": 440.0
+                        },
+                        "pos_rel": {
+                            "x": 0.7925925850868225,
+                            "y": -0.18518519401550293
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -6214,32 +6324,18 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
-                "libobs.show_scene_item.7": [],
-                "libobs.hide_scene_item.7": [],
-                "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": [],
-                "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": [],
-                "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": [],
-                "libobs.show_scene_item.12": [],
-                "libobs.hide_scene_item.12": [],
-                "libobs.show_scene_item.13": [],
-                "libobs.hide_scene_item.13": [],
-                "libobs.show_scene_item.14": [],
-                "libobs.hide_scene_item.14": [],
                 "alex_01": [],
                 "alex_01 Hold": [],
                 "alex_02": [],
                 "alex_02 Hold": [],
                 "alex_03": [],
                 "alex_03 Hold": [],
+                "martin_01": [],
+                "martin_01 Hold": [],
+                "martin_02": [],
+                "martin_02 Hold": [],
+                "martin_03": [],
+                "martin_03 Hold": [],
                 "schimpf_01": [],
                 "schimpf_01 Hold": [],
                 "schimpf_02": [],
@@ -6264,64 +6360,88 @@
                 "mueller_02 Hold": [],
                 "mueller_03": [],
                 "mueller_03 Hold": [],
-                "libobs.show_scene_item.15": [],
-                "libobs.hide_scene_item.15": [],
-                "libobs.show_scene_item.16": [],
-                "libobs.hide_scene_item.16": [],
-                "martin_01": [],
-                "martin_01 Hold": [],
-                "martin_02": [],
-                "martin_02 Hold": [],
-                "martin_03": [],
-                "martin_03 Hold": [],
-                "libobs.show_scene_item.17": [],
-                "libobs.hide_scene_item.17": [],
-                "libobs.show_scene_item.18": [],
-                "libobs.hide_scene_item.18": [],
                 "oma_01": [],
                 "oma_01 Hold": [],
                 "oma_02": [],
                 "oma_02 Hold": [],
                 "oma_03": [],
                 "oma_03 Hold": [],
-                "libobs.show_scene_item.20": [],
-                "libobs.hide_scene_item.20": [],
-                "libobs.show_scene_item.21": [],
-                "libobs.hide_scene_item.21": [],
                 "sean_01": [],
                 "sean_01 Hold": [],
                 "sean_02": [],
                 "sean_02 Hold": [],
                 "sean_03": [],
                 "sean_03 Hold": [],
-                "libobs.show_scene_item.22": [],
-                "libobs.hide_scene_item.22": [],
-                "libobs.show_scene_item.23": [],
-                "libobs.hide_scene_item.23": [],
                 "jasmin_01": [],
                 "jasmin_01 Hold": [],
                 "jasmin_02": [],
                 "jasmin_02 Hold": [],
                 "jasmin_03": [],
                 "jasmin_03 Hold": [],
-                "libobs.show_scene_item.24": [],
-                "libobs.hide_scene_item.24": [],
-                "libobs.show_scene_item.25": [],
-                "libobs.hide_scene_item.25": [],
                 "sigrun_01": [],
                 "sigrun_01 Hold": [],
                 "sigrun_02": [],
                 "sigrun_02 Hold": [],
                 "sigrun_03": [],
-                "sigrun_03 Hold": []
+                "sigrun_03 Hold": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": [],
+                "libobs.show_scene_item.10": [],
+                "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": [],
+                "libobs.show_scene_item.9": [],
+                "libobs.hide_scene_item.9": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": [],
+                "libobs.show_scene_item.15": [],
+                "libobs.hide_scene_item.15": [],
+                "libobs.show_scene_item.16": [],
+                "libobs.hide_scene_item.16": [],
+                "libobs.show_scene_item.17": [],
+                "libobs.hide_scene_item.17": [],
+                "libobs.show_scene_item.18": [],
+                "libobs.hide_scene_item.18": [],
+                "libobs.show_scene_item.20": [],
+                "libobs.hide_scene_item.20": [],
+                "libobs.show_scene_item.21": [],
+                "libobs.hide_scene_item.21": [],
+                "libobs.show_scene_item.22": [],
+                "libobs.hide_scene_item.22": [],
+                "libobs.show_scene_item.23": [],
+                "libobs.hide_scene_item.23": [],
+                "libobs.show_scene_item.24": [],
+                "libobs.hide_scene_item.24": [],
+                "libobs.show_scene_item.25": [],
+                "libobs.hide_scene_item.25": [],
+                "libobs.show_scene_item.26": [],
+                "libobs.hide_scene_item.26": [],
+                "libobs.show_scene_item.27": [],
+                "libobs.hide_scene_item.27": [],
+                "guenter_01": [],
+                "guenter_01 Hold": [],
+                "guenter_02": [],
+                "guenter_02 Hold": [],
+                "guenter_03": [],
+                "guenter_03 Hold": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {
-                "transition_duration": 1500,
-                "transition": "Überblende"
+                "transition": "Überblende",
+                "transition_duration": 1500
             },
             "filters": [
                 {
@@ -6465,9 +6585,9 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_alex_jenny",
-                        "duration": 1500,
                         "transform_text": "pos: x 386.5 y 899.5 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
-                        "start_delay": 40000
+                        "start_delay": 40000,
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -6504,10 +6624,10 @@
                         "end_enable": 1,
                         "next_move": "schimpf_01",
                         "start_trigger": 0,
-                        "duration": 38000,
                         "sceneitem": "vid_martin",
                         "end_sceneitem": "vid_martin",
-                        "simultaneous_move": "martin_02"
+                        "simultaneous_move": "martin_02",
+                        "duration": 38000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -6567,8 +6687,8 @@
                         "change_visibility": 1,
                         "transform_text": "pos: x 240.0 y 923.0 rot: 0.0 scale: x 0.337 y 0.337 crop: l 0 t 0 r 0 b 0",
                         "source": "txt_martin",
-                        "duration": 1500,
-                        "next_move": "martin_03"
+                        "next_move": "martin_03",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -6627,9 +6747,9 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_martin",
+                        "start_delay": 40000,
                         "duration": 1500,
-                        "transform_text": "pos: x 275.0 y 923.0 rot: 0.0 scale: x 0 y 0 crop: l 0 t 0 r 0 b 0",
-                        "start_delay": 40000
+                        "transform_text": "pos: x 275.0 y 923.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -6790,8 +6910,8 @@
                         "change_visibility": 2,
                         "source": "txt_schimpf",
                         "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500,
-                        "start_delay": 0
+                        "start_delay": 0,
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -6951,8 +7071,8 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500,
-                        "start_delay": 7000
+                        "start_delay": 7000,
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7150,8 +7270,8 @@
                         "sceneitem": "vid_mueller",
                         "end_sceneitem": "vid_mueller",
                         "simultaneous_move": "mueller_02",
-                        "duration": 5500,
-                        "next_move": "oma_01"
+                        "next_move": "oma_01",
+                        "duration": 5500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7310,8 +7430,8 @@
                         "sceneitem": "vid_oma",
                         "end_sceneitem": "vid_oma",
                         "simultaneous_move": "oma_02",
-                        "duration": 29000,
-                        "next_move": "sean_01"
+                        "next_move": "sean_01",
+                        "duration": 29000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7371,8 +7491,8 @@
                         "change_visibility": 1,
                         "source": "txt_oma",
                         "next_move": "oma_03",
-                        "duration": 1500,
-                        "transform_text": "pos: x 1545.0 y 218.0 rot: 0.0 scale: x 0.347 y 0.348 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 1545.0 y 218.0 rot: 0.0 scale: x 0.347 y 0.348 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7431,9 +7551,9 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_oma",
+                        "start_delay": 25000,
                         "duration": 1500,
-                        "transform_text": "pos: x 1545.0 y 218.0 rot: 0.0 scale: x 0 y 0 crop: l 0 t 0 r 0 b 0",
-                        "start_delay": 25000
+                        "transform_text": "pos: x 1545.0 y 218.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7468,11 +7588,11 @@
                         "end_canvas": "Main",
                         "end_scene": "outro_gruese",
                         "end_enable": 1,
-                        "duration": 6000,
                         "sceneitem": "vid_sean",
                         "end_sceneitem": "vid_sean",
                         "simultaneous_move": "sean_02",
-                        "next_move": "jasmin_01"
+                        "next_move": "jasmin_01",
+                        "duration": 6000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7530,10 +7650,10 @@
                         },
                         "end_delay": 1500,
                         "change_visibility": 1,
-                        "duration": 1500,
                         "transform_text": "pos: x 472.0 y 91.0 rot: 0.0 scale: x 0.544 y 0.545 crop: l 0 t 0 r 0 b 0",
                         "source": "txt_sean",
-                        "next_move": "sean_03"
+                        "next_move": "sean_03",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7592,9 +7712,9 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "start_delay": 2000,
+                        "source": "txt_sean",
                         "duration": 1500,
-                        "transform_text": "pos: x 472.0 y 91.0 rot: 0.0 scale: x 0. y 0 crop: l 0 t 0 r 0 b 0",
-                        "source": "txt_sean"
+                        "transform_text": "pos: x 472.0 y 91.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7629,11 +7749,11 @@
                         "end_canvas": "Main",
                         "end_scene": "outro_gruese",
                         "end_enable": 1,
-                        "duration": 16000,
                         "sceneitem": "vid_jasmin",
                         "end_sceneitem": "vid_jasmin",
                         "simultaneous_move": "jasmin_02",
-                        "next_move": "sigrun_01"
+                        "next_move": "sigrun_01",
+                        "duration": 16000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7691,10 +7811,10 @@
                         },
                         "end_delay": 1500,
                         "change_visibility": 1,
-                        "duration": 1500,
                         "transform_text": "pos: x 996.0 y 164.0 rot: 0.0 scale: x 0.495 y 0.495 crop: l 0 t 0 r 0 b 0",
                         "source": "txt_jasmin",
-                        "next_move": "jasmin_03"
+                        "next_move": "jasmin_03",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7753,9 +7873,9 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "start_delay": 10000,
-                        "duration": 1500,
                         "source": "txt_jasmin",
-                        "transform_text": "pos: x 996.0 y 164.0 rot: 0.0 scale: x 00 y 0 crop: l 0 t 0 r 0 b 0"
+                        "duration": 1500,
+                        "transform_text": "pos: x 996.0 y 164.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7791,9 +7911,10 @@
                         "end_scene": "outro_gruese",
                         "end_enable": 1,
                         "simultaneous_move": "sigrun_02",
-                        "duration": 60000,
                         "sceneitem": "vid_sigrun",
-                        "end_sceneitem": "vid_sigrun"
+                        "end_sceneitem": "vid_sigrun",
+                        "duration": 62000,
+                        "next_move": "guenter_01"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7853,8 +7974,8 @@
                         "change_visibility": 1,
                         "source": "txt_sigrun",
                         "next_move": "sigrun_03",
-                        "duration": 1500,
-                        "transform_text": "pos: x 82.0 y 181.0 rot: 0.0 scale: x 0.543 y 0.543 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 82.0 y 181.0 rot: 0.0 scale: x 0.543 y 0.543 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7915,7 +8036,167 @@
                         "start_delay": 60000,
                         "source": "txt_sigrun",
                         "duration": 1500,
-                        "transform_text": "pos: x 82.0 y 181.0 rot: 0.0 scale: x 0 y 0 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 82.0 y 181.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "guenter_01",
+                    "uuid": "6621e16a-f0ee-460a-a351-c3d2cc427222",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "custom_duration": true,
+                        "action": 3,
+                        "canvas": "Main",
+                        "scene": "outro_gruese",
+                        "enable": 0,
+                        "end_action": 3,
+                        "end_canvas": "Main",
+                        "end_scene": "outro_gruese",
+                        "end_enable": 1,
+                        "duration": 44000,
+                        "sceneitem": "vid_guenter",
+                        "end_sceneitem": "vid_guenter",
+                        "simultaneous_move": "guenter_02"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "guenter_02",
+                    "uuid": "5c2c57b4-19b9-4121-bee8-26fe56e51118",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 1388.0,
+                            "x_sign": " ",
+                            "y": 440.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.5720000267028809,
+                            "x_sign": " ",
+                            "y": 0.5730000138282776,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "end_delay": 1500,
+                        "change_visibility": 1,
+                        "duration": 1500,
+                        "transform_text": "pos: x 1388.0 y 440.0 rot: 0.0 scale: x 0.572 y 0.573 crop: l 0 t 0 r 0 b 0",
+                        "source": "txt_guenter",
+                        "next_move": "guenter_03"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "guenter_03",
+                    "uuid": "61ba564b-422b-490c-9b2a-c2d3f4e5fbdb",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 1388.0,
+                            "x_sign": " ",
+                            "y": 440.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "next_move": "",
+                        "change_visibility": 2,
+                        "start_delay": 40000,
+                        "duration": 1500,
+                        "source": "txt_guenter",
+                        "transform_text": "pos: x 1388.0 y 440.0 rot: 0.0 scale: x 00 y 0 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8708,20 +8989,20 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -8830,6 +9111,8 @@
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.15": [],
+                "libobs.hide_scene_item.15": [],
                 "libobs.show_scene_item.8": [],
                 "libobs.hide_scene_item.8": [],
                 "libobs.show_scene_item.11": [],
@@ -8837,9 +9120,7 @@
                 "libobs.show_scene_item.12": [],
                 "libobs.hide_scene_item.12": [],
                 "libobs.show_scene_item.13": [],
-                "libobs.hide_scene_item.13": [],
-                "libobs.show_scene_item.15": [],
-                "libobs.hide_scene_item.15": []
+                "libobs.hide_scene_item.13": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -8889,8 +9170,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8948,8 +9229,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9386,19 +9667,19 @@
                         "id": 10,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05921311676502228,
+                            "x": 0.02466586045920849,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": 0.05921311676502228,
+                            "x": 0.02466586045920849,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -9502,6 +9783,8 @@
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": [],
                 "libobs.show_scene_item.6": [],
                 "libobs.hide_scene_item.6": [],
                 "libobs.show_scene_item.9": [],
@@ -9509,9 +9792,7 @@
                 "libobs.show_scene_item.10": [],
                 "libobs.hide_scene_item.10": [],
                 "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": [],
-                "libobs.show_scene_item.12": [],
-                "libobs.hide_scene_item.12": []
+                "libobs.hide_scene_item.11": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -9561,8 +9842,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9620,8 +9901,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10058,20 +10339,20 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -10174,6 +10455,8 @@
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
                 "libobs.show_scene_item.7": [],
                 "libobs.hide_scene_item.7": [],
                 "libobs.show_scene_item.8": [],
@@ -10181,9 +10464,7 @@
                 "libobs.show_scene_item.9": [],
                 "libobs.hide_scene_item.9": [],
                 "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": [],
-                "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": []
+                "libobs.hide_scene_item.10": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10233,8 +10514,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10292,8 +10573,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10322,8 +10603,8 @@
             "versioned_id": "ffmpeg_source",
             "settings": {
                 "local_file": "C:/Lokale Bilder/mama/sound/Lucilectric - Mädchen.m4a",
-                "restart_on_activate": false,
-                "looping": true
+                "looping": true,
+                "restart_on_activate": false
             },
             "mixers": 255,
             "sync": 0,
@@ -10380,56 +10661,6 @@
                 "MediaSource.Play": [],
                 "MediaSource.Pause": [],
                 "MediaSource.Stop": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 2,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "sprachnachrichten",
-            "uuid": "66aee3a8-0776-4b9e-b410-4ab2ac86666a",
-            "id": "vlc_source",
-            "versioned_id": "vlc_source",
-            "settings": {
-                "playlist": [
-                    {
-                        "value": "C:/Lokale Bilder/mama/sprachnachrichten/bruder.ogg",
-                        "uuid": "c576a59e-3370-4998-b17c-945867b73082",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/Lokale Bilder/mama/sprachnachrichten/ich.ogg",
-                        "uuid": "1f4fc937-9aec-4db1-b408-77e731d680f6",
-                        "selected": false,
-                        "hidden": false
-                    }
-                ],
-                "loop": false
-            },
-            "mixers": 255,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "VLCSource.PlayPause": [],
-                "VLCSource.Restart": [],
-                "VLCSource.Stop": [],
-                "VLCSource.PlaylistNext": [],
-                "VLCSource.PlaylistPrev": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10768,20 +10999,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -11233,8 +11464,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11292,8 +11523,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11620,20 +11851,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -12084,8 +12315,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -12143,8 +12374,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -13459,20 +13690,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -13801,8 +14032,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -13860,8 +14091,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -14133,19 +14364,19 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05921311676502228,
+                            "x": 0.02466586045920849,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": 0.05921311676502228,
+                            "x": 0.02466586045920849,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -14660,8 +14891,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -14719,8 +14950,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -16554,20 +16785,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -16896,8 +17127,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -16955,8 +17186,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -17708,20 +17939,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -18050,8 +18281,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -18109,8 +18340,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -18437,20 +18668,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -18722,8 +18953,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -18781,8 +19012,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -19109,20 +19340,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -19451,8 +19682,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -19510,8 +19741,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -19838,20 +20069,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -20180,8 +20411,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -20239,8 +20470,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -21484,20 +21715,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 615.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6378828287124634,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.024515319615602493,
+                            "y": 0.06302754580974579
                         },
                         "bounds": {
                             "x": 0.0,
@@ -21826,8 +22057,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -22213,20 +22444,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 616.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6360753774642944,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.021477460861206055,
+                            "y": 0.06302977353334427
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.021477460861206055,
+                            "y": 0.06302977353334427
                         },
                         "bounds": {
                             "x": 0.0,
@@ -22555,8 +22786,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -23462,6 +23693,8 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "Stop_Video": [],
+                "Stop_Video Hold": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -23471,9 +23704,7 @@
                 "libobs.show_scene_item.6": [],
                 "libobs.hide_scene_item.6": [],
                 "libobs.show_scene_item.7": [],
-                "libobs.hide_scene_item.7": [],
-                "Stop_Video": [],
-                "Stop_Video Hold": []
+                "libobs.hide_scene_item.7": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -24390,12 +24621,12 @@
                             "y": -0.7944444417953491
                         },
                         "scale": {
-                            "x": 0.164000004529953,
-                            "y": 0.164000004529953
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.164000004529953,
-                            "y": 0.164000004529953
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -24419,7 +24650,7 @@
                     {
                         "name": "Uralub_03",
                         "source_uuid": "af2f76ff-fbaf-4ed2-8e28-1e5e425c76f9",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 24.0,
                         "scale_ref": {
@@ -24445,12 +24676,12 @@
                             "y": -1.211111068725586
                         },
                         "scale": {
-                            "x": 0.11400000005960464,
-                            "y": 0.11400000005960464
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.11400000005960464,
-                            "y": 0.11400000005960464
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -24474,7 +24705,7 @@
                     {
                         "name": "Urlaub_04",
                         "source_uuid": "dd903c92-10bf-4028-bbc3-92fd842bc41e",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": -15.899999618530273,
                         "scale_ref": {
@@ -24500,12 +24731,12 @@
                             "y": 0.26944446563720703
                         },
                         "scale": {
-                            "x": 0.17000000178813934,
-                            "y": 0.17100000381469727
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.17000000178813934,
-                            "y": 0.17100000381469727
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -24529,9 +24760,9 @@
                     {
                         "name": "Urlaub_05",
                         "source_uuid": "b9812e48-6d9a-4a5e-8375-80711dee0a9a",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
-                        "rot": 18.959518432617188,
+                        "rot": 19.0,
                         "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
@@ -24555,12 +24786,12 @@
                             "y": -0.1685185432434082
                         },
                         "scale": {
-                            "x": 0.22045855224132538,
-                            "y": 0.2204899787902832
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.22045855224132538,
-                            "y": 0.2204899787902832
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -24694,7 +24925,7 @@
                     {
                         "name": "urlaub_06",
                         "source_uuid": "3e6eb15a-c2d7-4e6c-b305-cc9bd04ae1f1",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 4.900000095367432,
                         "scale_ref": {
@@ -24712,12 +24943,12 @@
                         "id": 11,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 960.0,
-                            "y": 540.0
+                            "x": 595.5,
+                            "y": 195.5
                         },
                         "pos_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": -0.675000011920929,
+                            "y": -0.6379629373550415
                         },
                         "scale": {
                             "x": 1.0,
@@ -24728,12 +24959,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1138.0,
+                            "y": 712.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 2.107407331466675,
+                            "y": 1.3185185194015503
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -24812,6 +25043,14 @@
                 "05-disable-05 Hold": [],
                 "06-shrink-05": [],
                 "06-shrink-05 Hold": [],
+                "lower_sound": [],
+                "lower_sound Hold": [],
+                "upper_sound": [],
+                "upper_sound Hold": [],
+                "90_show_crew": [],
+                "90_show_crew Hold": [],
+                "90_hide_crew": [],
+                "90_hide_crew Hold": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -24832,16 +25071,8 @@
                 "libobs.hide_scene_item.7": [],
                 "libobs.show_scene_item.6": [],
                 "libobs.hide_scene_item.6": [],
-                "lower_sound": [],
-                "lower_sound Hold": [],
-                "upper_sound": [],
-                "upper_sound Hold": [],
                 "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": [],
-                "90_show_crew": [],
-                "90_show_crew Hold": [],
-                "90_hide_crew": [],
-                "90_hide_crew Hold": []
+                "libobs.hide_scene_item.11": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -24956,10 +25187,10 @@
                         },
                         "source": "picture_frame",
                         "change_visibility": 8,
-                        "transform_text": "pos: x 455.0 y 814.0 rot: 270.0 scale: x 0.261 y 0.463 crop: l 0 t 0 r 0 b 0",
-                        "duration": 45000,
                         "simultaneous_move": "lower_sound",
-                        "next_move": "upper_sound"
+                        "next_move": "upper_sound",
+                        "duration": 45000,
+                        "transform_text": "pos: x 455.0 y 814.0 rot: 270.0 scale: x 0.261 y 0.463 bounds: x 1.000 y 1.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -25612,15 +25843,15 @@
                         "rot": -15.899999618530273,
                         "rot_sign": " ",
                         "pos": {
-                            "x": 1460.0,
+                            "x": 1325.0,
                             "x_sign": " ",
-                            "y": 685.5,
+                            "y": 602.5,
                             "y_sign": " "
                         },
                         "scale": {
-                            "x": 0.17000000178813934,
+                            "x": 0.23219116032123566,
                             "x_sign": " ",
-                            "y": 0.17100000381469727,
+                            "y": 0.23192240297794342,
                             "y_sign": " "
                         },
                         "bounds": {
@@ -25645,7 +25876,7 @@
                         "start_delay": 1500,
                         "change_order": 0,
                         "simultaneous_move": "",
-                        "transform_text": "pos: x 1460.0 y 685.5 rot: -15.9 scale: x 0.170 y 0.171 crop: l 531 t 0 r 1283 b 0",
+                        "transform_text": "pos: x 1325.0 y 602.5 rot: -15.9 scale: x 0.232 y 0.232 crop: l 531 t 0 r 1283 b 0",
                         "next_move": "02-expand-05",
                         "duration": 1500,
                         "easing_function_match": 2
@@ -26061,8 +26292,8 @@
                             "bottom_sign": " "
                         },
                         "source": "urlaub_06",
-                        "duration": 1500,
-                        "change_visibility": 1
+                        "change_visibility": 1,
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -26088,7 +26319,6 @@
                     "id": "move_source_filter",
                     "versioned_id": "move_source_filter",
                     "settings": {
-                        "transform_text": "pos: x 960 y 540 rot: 4.9 bounds: x 0 y 0 crop: l 0 t 0 r 0 b 0",
                         "rot": 4.900000095367432,
                         "rot_sign": " ",
                         "pos": {
@@ -26120,9 +26350,10 @@
                             "bottom_sign": " "
                         },
                         "source": "urlaub_06",
-                        "custom_duration": false,
                         "start_trigger": 1,
-                        "change_visibility": 5
+                        "change_visibility": 5,
+                        "custom_duration": false,
+                        "transform_text": "pos: x 960.0 y 540.0 rot: 4.9 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -26449,20 +26680,20 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 604.5,
+                            "x": 616.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6585204005241394,
+                            "x": -0.6360753774642944,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.021477460861206055,
+                            "y": 0.06302977353334427
                         },
                         "scale_rel": {
-                            "x": 0.05920187756419182,
-                            "y": 0.06300205737352371
+                            "x": 0.021477460861206055,
+                            "y": 0.06302977353334427
                         },
                         "bounds": {
                             "x": 0.0,
@@ -26553,6 +26784,14 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "disable_cam": [],
+                "disable_cam Hold": [],
+                "Move Action": [],
+                "Move Action Hold": [],
+                "sharmrock+": [],
+                "sharmrock+ Hold": [],
+                "sharmrock-": [],
+                "sharmrock- Hold": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -26566,15 +26805,7 @@
                 "libobs.show_scene_item.7": [],
                 "libobs.hide_scene_item.7": [],
                 "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": [],
-                "disable_cam": [],
-                "disable_cam Hold": [],
-                "Move Action": [],
-                "Move Action Hold": [],
-                "sharmrock+": [],
-                "sharmrock+ Hold": [],
-                "sharmrock-": [],
-                "sharmrock- Hold": []
+                "libobs.hide_scene_item.10": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -26688,8 +26919,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -27448,20 +27679,20 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.0,
+                            "x": 616.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.657397449016571,
+                            "x": -0.6360753774642944,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05731438472867012,
-                            "y": 0.06300344318151474
+                            "x": 0.021477460861206055,
+                            "y": 0.06302977353334427
                         },
                         "scale_rel": {
-                            "x": 0.05731438472867012,
-                            "y": 0.06300344318151474
+                            "x": 0.021477460861206055,
+                            "y": 0.06302977353334427
                         },
                         "bounds": {
                             "x": 0.0,
@@ -27607,10 +27838,20 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "sharmrock+": [],
+                "sharmrock+ Hold": [],
+                "sharmrock-": [],
+                "sharmrock- Hold": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
+                "libobs.show_scene_item.10": [],
+                "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
@@ -27619,16 +27860,6 @@
                 "libobs.hide_scene_item.5": [],
                 "libobs.show_scene_item.6": [],
                 "libobs.hide_scene_item.6": [],
-                "libobs.show_scene_item.7": [],
-                "libobs.hide_scene_item.7": [],
-                "sharmrock+": [],
-                "sharmrock+ Hold": [],
-                "sharmrock-": [],
-                "sharmrock- Hold": [],
-                "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": [],
-                "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": [],
                 "libobs.show_scene_item.12": [],
                 "libobs.hide_scene_item.12": []
             },
@@ -27680,8 +27911,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -27739,7 +27970,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -27918,6 +28149,32 @@
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "text": "Isabella, Alex, Yvonne, Jennifer"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "txt_guenter",
+            "uuid": "cd83695b-3d26-40cf-a283-2193874073a5",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "Günter\n&\nNane"
             },
             "mixers": 0,
             "sync": 0,
@@ -28372,15 +28629,15 @@
                     "settings": {
                         "rectangle_corner_type": 1,
                         "shape_feather_type": 1,
-                        "shape_center_x": 5094.0,
-                        "position_x": 6371.0,
-                        "shape_center_y": 5212.0,
-                        "position_y": 3443.5,
-                        "mask_gradient_position": 6371.0,
                         "mask_source_width": 12742,
                         "mask_source_height": 6887,
                         "shape_type": 6,
-                        "heart_size": 5826.0
+                        "shape_center_x": 5094.0,
+                        "shape_center_y": 5212.0,
+                        "position_x": 6371.0,
+                        "position_y": 3443.5,
+                        "heart_size": 5826.0,
+                        "mask_gradient_position": 6371.0
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -28449,6 +28706,41 @@
             "sync": 0,
             "flags": 0,
             "volume": 3.1622776985168457,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 2,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "vid_guenter",
+            "uuid": "85cd22a0-b30b-48da-bd78-b72bde14fbca",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/Lokale Bilder/wuensche/guenter_nane.mp4"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -28723,7 +29015,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "C:/Lokale Bilder/wuensche/sean_marion.mov"
+                "local_file": "C:/Lokale Bilder/wuensche/cut/sean/sean.mp4"
             },
             "mixers": 255,
             "sync": 0,
