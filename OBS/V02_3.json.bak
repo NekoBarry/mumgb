@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "outro",
-    "current_program_scene": "outro",
+    "current_scene": "outro_neu",
+    "current_program_scene": "outro_neu",
     "scene_order": [
         {
             "name": "Intro"
@@ -152,6 +152,9 @@
             "name": "outro"
         },
         {
+            "name": "outro_neu"
+        },
+        {
             "name": "template"
         },
         {
@@ -216,7 +219,7 @@
     "transition_duration": 1500,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -11,
+    "scaling_level": -1,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
@@ -2672,6 +2675,45 @@
         },
         {
             "prev_ver": 536870916,
+            "name": "credits",
+            "uuid": "0c7578ea-0fee-4fc3-8567-b1f556dbd836",
+            "id": "browser_source",
+            "versioned_id": "browser_source",
+            "settings": {
+                "url": "C:/Git/mumgb/OBS/assets/src/outro_credits.html",
+                "is_local_file": true,
+                "local_file": "C:/Git/mumgb/OBS/assets/src/outro_credits.html",
+                "css": "",
+                "shutdown": true,
+                "restart_when_active": true,
+                "width": 1920,
+                "height": 1080
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "ObsBrowser.Refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
             "name": "dancing_mam",
             "uuid": "204a845c-5053-4e5f-b21c-48457d13c5a6",
             "id": "ffmpeg_source",
@@ -2699,6 +2741,96 @@
                 "MediaSource.Play": [],
                 "MediaSource.Pause": [],
                 "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "dia_outro",
+            "uuid": "a801cf27-710b-4da6-8700-b7cfc6408ef1",
+            "id": "slideshow",
+            "versioned_id": "slideshow_v2",
+            "settings": {
+                "playback_behavior": "stop_restart",
+                "playback_mode": "random",
+                "hide": true,
+                "files": [
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene01",
+                        "uuid": "1abc2fad-89e2-44e4-8f6a-ce762c701899",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene02",
+                        "uuid": "9e99daba-16c0-43b6-8586-3d28b3737f27",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene04",
+                        "uuid": "1fe9910f-7e3b-4fc0-b37b-c0b12085fcb2",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene08",
+                        "uuid": "2f894f4f-b9d2-4493-9fb4-127fdc3cce18",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene23",
+                        "uuid": "a5c56889-e2b8-43ef-97d1-fb62b8169085",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene09",
+                        "uuid": "7336e1fd-ae34-4886-ad6d-17d3a7348cf1",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene10",
+                        "uuid": "d9afa6a4-303d-4b9b-8583-ffb2f6432a67",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene15",
+                        "uuid": "05406206-fccd-44b6-98e7-835c140d1066",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene16",
+                        "uuid": "24f29c88-df03-4d8d-aae8-fdef5106e023",
+                        "selected": false,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "SlideShow.PlayPause": [],
+                "SlideShow.Restart": [],
+                "SlideShow.Stop": [],
+                "SlideShow.NextSlide": [],
+                "SlideShow.PreviousSlide": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -4189,8 +4321,8 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "looping": true,
-                "local_file": "C:/Lokale Bilder/wuensche/cut/kristian3/kristian3.mp4"
+                "local_file": "C:/Lokale Bilder/wuensche/cut/kristian3/kristian3.mp4",
+                "looping": true
             },
             "mixers": 255,
             "sync": 0,
@@ -4780,7 +4912,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 13,
+                "id_counter": 14,
                 "items": [
                     {
                         "name": "dancing_mam",
@@ -5060,7 +5192,7 @@
                     {
                         "name": "outro_txt",
                         "source_uuid": "ea9686e7-bce1-4a37-9201-6f270c161af7",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5078,20 +5210,20 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 502.0,
-                            "y": -2625.0
+                            "x": 451.0,
+                            "y": 1085.0
                         },
                         "pos_rel": {
-                            "x": -0.8481481671333313,
-                            "y": -5.861111164093018
+                            "x": -0.9425926208496094,
+                            "y": 1.0092592239379883
                         },
                         "scale": {
-                            "x": 0.47390493750572205,
-                            "y": 0.4739669859409332
+                            "x": 0.4740000069141388,
+                            "y": 0.4740000069141388
                         },
                         "scale_rel": {
-                            "x": 0.47390493750572205,
-                            "y": 0.4739669859409332
+                            "x": 0.4740000069141388,
+                            "y": 0.4740000069141388
                         },
                         "bounds": {
                             "x": 0.0,
@@ -5170,7 +5302,7 @@
                     {
                         "name": "test",
                         "source_uuid": "ea6976de-7c87-404e-8283-4ef4e9c34605",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5210,6 +5342,61 @@
                         "bounds_rel": {
                             "x": 0.0,
                             "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "credits",
+                        "source_uuid": "0c7578ea-0fee-4fc3-8567-b1f556dbd836",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 14,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -5274,7 +5461,9 @@
                 "libobs.show_scene_item.10": [],
                 "libobs.hide_scene_item.10": [],
                 "libobs.show_scene_item.13": [],
-                "libobs.hide_scene_item.13": []
+                "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -5437,9 +5626,9 @@
                             "y_sign": " "
                         },
                         "scale": {
-                            "x": 0.47390493750572205,
+                            "x": 0.4740000069141388,
                             "x_sign": " ",
-                            "y": 0.4739669859409332,
+                            "y": 0.4740000069141388,
                             "y_sign": " "
                         },
                         "bounds": {
@@ -5522,16 +5711,16 @@
                             "bottom": 0.0,
                             "bottom_sign": " "
                         },
-                        "start_trigger": 1,
+                        "start_trigger": 0,
                         "simultaneous_move": "Outro_text_einblenden",
                         "start_delay": 3000,
                         "next_move": "Video_aus",
                         "change_visibility": 1,
-                        "transform_text": "pos: x 650.0 y -2134.0 rot: 0.0 scale: x 0.288 y 0.288 crop: l 0 t 0 r 0 b 0",
                         "duration": 35000,
                         "custom_duration": true,
                         "easing_match": 0,
-                        "easing_function_match": 2
+                        "easing_function_match": 2,
+                        "transform_text": "pos: x 650.0 y -2134.0 rot: 0.0 scale: x 0.288 y 0.288 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -5563,7 +5752,7 @@
                         "scene": "outro",
                         "sceneitem": "outro_txt",
                         "enable": 0,
-                        "start_trigger": 1,
+                        "start_trigger": 0,
                         "next_move": "",
                         "duration": 0
                     },
@@ -7636,6 +7825,22 @@
                 "tanja_02 Hold": [],
                 "tanja_03": [],
                 "tanja_03 Hold": [],
+                "isa_01": [],
+                "isa_01 Hold": [],
+                "isa_02": [],
+                "isa_02 Hold": [],
+                "isa_03": [],
+                "isa_03 Hold": [],
+                "anja_01": [],
+                "anja_01 Hold": [],
+                "anja_02": [],
+                "anja_02 Hold": [],
+                "anja_02 2": [],
+                "anja_02 2 Hold": [],
+                "anja_03": [],
+                "anja_03 Hold": [],
+                "anja_03 2": [],
+                "anja_03 2 Hold": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -7696,28 +7901,12 @@
                 "libobs.hide_scene_item.35": [],
                 "libobs.show_scene_item.36": [],
                 "libobs.hide_scene_item.36": [],
-                "isa_01": [],
-                "isa_01 Hold": [],
-                "isa_02": [],
-                "isa_02 Hold": [],
-                "isa_03": [],
-                "isa_03 Hold": [],
-                "anja_01": [],
-                "anja_01 Hold": [],
                 "libobs.show_scene_item.37": [],
                 "libobs.hide_scene_item.37": [],
                 "libobs.show_scene_item.38": [],
                 "libobs.hide_scene_item.38": [],
                 "libobs.show_scene_item.39": [],
-                "libobs.hide_scene_item.39": [],
-                "anja_02": [],
-                "anja_02 Hold": [],
-                "anja_02 2": [],
-                "anja_02 2 Hold": [],
-                "anja_03": [],
-                "anja_03 Hold": [],
-                "anja_03 2": [],
-                "anja_03 2 Hold": []
+                "libobs.hide_scene_item.39": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -7809,8 +7998,8 @@
                         "next_move": "alex_03",
                         "change_visibility": 1,
                         "source": "txt_alex_jenny",
-                        "duration": 1500,
-                        "transform_text": "pos: x 388.5 y 933.5 rot: 0.0 scale: x 0.358 y 0.360 bounds: x 1.000 y 1.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 388.5 y 933.5 rot: 0.0 scale: x 0.358 y 0.360 bounds: x 1.000 y 1.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7871,7 +8060,7 @@
                         "source": "txt_alex_jenny",
                         "start_delay": 40000,
                         "duration": 1500,
-                        "transform_text": "pos: x 386.5 y 899.5 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 386.5 y 899.5 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8133,8 +8322,8 @@
                         "next_move": "schimpf_03",
                         "change_visibility": 1,
                         "source": "txt_schimpf",
-                        "duration": 1500,
-                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.381 y 0.383 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.381 y 0.383 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8194,8 +8383,8 @@
                         "change_visibility": 2,
                         "source": "txt_schimpf",
                         "start_delay": 0,
-                        "duration": 1500,
-                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8294,8 +8483,8 @@
                         "end_delay": 1500,
                         "next_move": "teanzer_03",
                         "change_visibility": 1,
-                        "duration": 1500,
-                        "transform_text": "pos: x 232.0 y 914.0 rot: 0.0 scale: x 0.381 y 0.383 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 232.0 y 914.0 rot: 0.0 scale: x 0.381 y 0.383 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8355,8 +8544,8 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "start_delay": 7000,
-                        "duration": 1500,
-                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8455,8 +8644,8 @@
                         "next_move": "tyla_03",
                         "change_visibility": 1,
                         "source": "txt_tyla_koba",
-                        "duration": 1500,
-                        "transform_text": "pos: x 227.0 y 190.0 rot: 0.0 scale: x 0.342 y 0.343 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 227.0 y 190.0 rot: 0.0 scale: x 0.342 y 0.343 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8515,8 +8704,8 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_tyla_koba",
-                        "duration": 1500,
-                        "transform_text": "pos: x 227.0 y 190.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 227.0 y 190.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8615,8 +8804,8 @@
                         "change_visibility": 1,
                         "source": "txt_mueller",
                         "next_move": "mueller_03",
-                        "duration": 1500,
-                        "transform_text": "pos: x 82.0 y 462.0 rot: 0.0 scale: x 0.353 y 0.352 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 82.0 y 462.0 rot: 0.0 scale: x 0.353 y 0.352 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -8675,8 +8864,8 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_mueller",
-                        "duration": 1500,
-                        "transform_text": "pos: x 82.0 y 462.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 82.0 y 462.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9519,8 +9708,8 @@
                         "sceneitem": "vid_chrisse",
                         "end_sceneitem": "vid_chrisse",
                         "simultaneous_move": "chrisse_02",
-                        "duration": 10000,
-                        "next_move": "isa_01"
+                        "next_move": "isa_01",
+                        "duration": 10000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9641,8 +9830,8 @@
                         "change_visibility": 2,
                         "start_delay": 5000,
                         "source": "txt_chrisse",
-                        "duration": 1500,
-                        "transform_text": "pos: x 888.0 y 333.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 888.0 y 333.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9804,8 +9993,8 @@
                         "change_visibility": 2,
                         "start_delay": 0,
                         "source": "txt_gisela",
-                        "duration": 1500,
-                        "transform_text": "pos: x 980.0 y 540.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 980.0 y 540.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9965,8 +10154,8 @@
                         "change_visibility": 2,
                         "start_delay": 500,
                         "source": "txt_tanja",
-                        "duration": 1000,
-                        "transform_text": "pos: x 287.0 y 69.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 287.0 y 69.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10004,8 +10193,8 @@
                         "sceneitem": "vid_isa",
                         "end_sceneitem": "vid_isa",
                         "simultaneous_move": "isa_02",
-                        "duration": 5500,
-                        "next_move": "anja_01"
+                        "next_move": "anja_01",
+                        "duration": 5500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10065,8 +10254,8 @@
                         "change_visibility": 1,
                         "source": "txt_isa",
                         "next_move": "isa_03",
-                        "duration": 1500,
-                        "transform_text": "pos: x 626.0 y 295.0 rot: 0.0 scale: x 0.610 y 0.610 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 626.0 y 295.0 rot: 0.0 scale: x 0.610 y 0.610 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10127,7 +10316,7 @@
                         "start_delay": 500,
                         "source": "txt_isa",
                         "duration": 1500,
-                        "transform_text": "pos: x 626.0 y 295.0 rot: 0.0 scale: x 0.0 y 0.0 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 626.0 y 295.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10163,10 +10352,10 @@
                         "end_scene": "outro_gruese",
                         "end_enable": 1,
                         "next_move": "",
-                        "duration": 30000,
                         "sceneitem": "vid_anja",
                         "end_sceneitem": "vid_anja",
-                        "simultaneous_move": "anja_02"
+                        "simultaneous_move": "anja_02",
+                        "duration": 30000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10224,12 +10413,12 @@
                         },
                         "end_delay": 1500,
                         "change_visibility": 1,
-                        "duration": 1500,
                         "source": "txt_kristian",
                         "transform_text": "pos: x 1311.0 y 440.0 rot: 0.0 scale: x 0.678 y 0.678 crop: l 0 t 0 r 0 b 0",
                         "start_delay": 0,
                         "simultaneous_move": "anja_02 2",
-                        "next_move": "anja_03"
+                        "next_move": "anja_03",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10288,10 +10477,10 @@
                         "end_delay": 1500,
                         "change_visibility": 1,
                         "source": "txt_anja",
-                        "duration": 1500,
                         "transform_text": "pos: x 26.0 y 220.0 rot: 0.0 scale: x 0.485 y 0.485 crop: l 0 t 0 r 0 b 0",
                         "start_delay": 15000,
-                        "next_move": "anja_03 2"
+                        "next_move": "anja_03 2",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10350,10 +10539,10 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "start_delay": 26000,
-                        "duration": 1500,
-                        "transform_text": "pos: x 1311.0 y 440.0 rot: 0.0 scale: x 0.0 y 0.0 crop: l 0 t 0 r 0 b 0",
                         "source": "txt_kristian",
-                        "simultaneous_move": ""
+                        "simultaneous_move": "",
+                        "duration": 1500,
+                        "transform_text": "pos: x 1311.0 y 440.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10414,7 +10603,371 @@
                         "start_delay": 11000,
                         "source": "txt_anja",
                         "duration": 1500,
-                        "transform_text": "pos: x 26.0 y 220.0 rot: 0.0 scale: x 0.0 y 0.0 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 26.0 y 220.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "outro_neu",
+            "uuid": "ad0dcbef-c7c4-4117-9c1e-2a76bacd868a",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 4,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "dancing_mam",
+                        "source_uuid": "204a845c-5053-4e5f-b21c-48457d13c5a6",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 2,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 44.0,
+                            "y": 425.0
+                        },
+                        "pos_rel": {
+                            "x": -1.6962963342666626,
+                            "y": -0.21296298503875732
+                        },
+                        "scale": {
+                            "x": 0.5445312261581421,
+                            "y": 0.5444444417953491
+                        },
+                        "scale_rel": {
+                            "x": 0.5445312261581421,
+                            "y": 0.5444444417953491
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "credits",
+                        "source_uuid": "0c7578ea-0fee-4fc3-8567-b1f556dbd836",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "dia_outro",
+                        "source_uuid": "a801cf27-710b-4da6-8700-b7cfc6408ef1",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 3,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": [],
+                "disable_dia": [],
+                "disable_dia Hold": [],
+                "hide_dia": [],
+                "hide_dia Hold": [],
+                "show_dia": [],
+                "show_dia Hold": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "disable_dia",
+                    "uuid": "28f64313-1b98-4cbf-848a-57fa2f4f7ddb",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "custom_duration": true,
+                        "action": 3,
+                        "canvas": "Main",
+                        "scene": "outro_neu",
+                        "sceneitem": "dia_outro",
+                        "enable": 1,
+                        "start_trigger": 2
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "hide_dia",
+                    "uuid": "c7f56f00-aa49-4c65-ad12-be78cdce7972",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "transform_text": "pos: x 960.0 y 540 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 00",
+                        "source": "dia_outro",
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 960.0,
+                            "x_sign": " ",
+                            "y": 540.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "duration": 0,
+                        "start_trigger": 2
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "show_dia",
+                    "uuid": "c041bdc9-1876-4c96-b57e-55665ee82d96",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "transform_text": "pos: x 138.0 y 78.0 rot: 0.0 scale: x 0.856 y 0.856 crop: l 0 t 0 r 0 b 0",
+                        "source": "dia_outro",
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 138.0,
+                            "x_sign": " ",
+                            "y": 78.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.8560000061988831,
+                            "x_sign": " ",
+                            "y": 0.8560000061988831,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "start_delay": 120000,
+                        "duration": 3000,
+                        "easing_match": 2,
+                        "start_trigger": 1,
+                        "change_visibility": 1
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11207,20 +11760,20 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 632.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6066986322402954,
-                            "y": 0.8148146867752075
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.02789759635925293,
-                            "y": 0.06306605041027069
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.02789759635925293,
-                            "y": 0.06306605041027069
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -11388,8 +11941,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11885,19 +12438,19 @@
                         "id": 10,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.03754907846450806,
+                            "x": -0.018455496057868004,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": -0.03754907846450806,
+                            "x": -0.018455496057868004,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -12060,8 +12613,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -12557,20 +13110,20 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -12732,8 +13285,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -13217,20 +13770,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 632.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6066986322402954,
-                            "y": 0.8148146867752075
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.02789759635925293,
-                            "y": 0.06306605041027069
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.02789759635925293,
-                            "y": 0.06306605041027069
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -13682,8 +14235,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -14069,20 +14622,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 632.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6066986322402954,
-                            "y": 0.8148146867752075
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.02789759635925293,
-                            "y": 0.06306605041027069
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.02789759635925293,
-                            "y": 0.06306605041027069
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -14533,8 +15086,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -15908,20 +16461,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 632.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6066986322402954,
-                            "y": 0.8148146867752075
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.02789759635925293,
-                            "y": 0.06306605041027069
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.02789759635925293,
-                            "y": 0.06306605041027069
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -16250,8 +16803,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -16582,19 +17135,19 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.03754907846450806,
+                            "x": -0.018455496057868004,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": -0.03754907846450806,
+                            "x": -0.018455496057868004,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -17109,8 +17662,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -17229,8 +17782,8 @@
                         "start_trigger": 1,
                         "end_delay": 1000,
                         "next_move": "kapitän_einblenden",
-                        "custom_duration": false,
-                        "transform_text": "pos: x 775.0 y 740.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 775.0 y 740.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "custom_duration": false
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -17287,10 +17840,10 @@
                             "bottom_sign": " "
                         },
                         "source": "kapitän_ohne_bg.png",
+                        "transform_text": "pos: x 275.0 y 240.0 rot: 0.0 scale: x 1.000 y 1.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 3000,
                         "easing_function_match": 4,
-                        "curve_match": 1.0,
-                        "transform_text": "pos: x 275.0 y 240.0 rot: 0.0 scale: x 1.000 y 1.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "curve_match": 1.0
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -19003,20 +19556,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -19345,8 +19898,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -20157,20 +20710,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -20499,8 +21052,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -20886,20 +21439,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -21171,8 +21724,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -21558,20 +22111,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -21900,8 +22453,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -22287,20 +22840,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -22629,8 +23182,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -23990,20 +24543,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -24275,8 +24828,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -24662,20 +25215,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -25004,8 +25557,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -27467,7 +28020,6 @@
                     "id": "move_source_filter",
                     "versioned_id": "move_source_filter",
                     "settings": {
-                        "transform_text": "pos: x 368.5 y 96.5 rot: 0.0 scale: x 0.296 y 0.296 crop: l 0 t 0 r 0 b 0",
                         "rot": 0.0,
                         "rot_sign": " ",
                         "pos": {
@@ -27506,7 +28058,8 @@
                         "change_order": 0,
                         "simultaneous_move": "",
                         "duration": 1500,
-                        "easing_function_match": 2
+                        "easing_function_match": 2,
+                        "transform_text": "pos: x 368.5 y 96.5 rot: 0.0 scale: x 0.296 y 0.296 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -27602,10 +28155,10 @@
                         "start_delay": 0,
                         "change_order": 0,
                         "simultaneous_move": "",
-                        "transform_text": "pos: x 368.5 y 96.5 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500,
                         "custom_duration": false,
-                        "easing_function_match": 2
+                        "easing_function_match": 2,
+                        "transform_text": "pos: x 368.5 y 96.5 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -28898,20 +29451,20 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -29137,8 +29690,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -29897,20 +30450,20 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 635.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6007173657417297,
+                            "x": -0.6121233701705933,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.037950485944747925,
-                            "y": 0.06307344138622284
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -30129,8 +30682,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -30935,19 +31488,19 @@
             "settings": {
                 "read_from_file": true,
                 "file": "C:/Git/mumgb/OBS/assets/src/outro.txt",
-                "antialiasing": false,
-                "align": "center",
                 "chatlog": false,
-                "chatlog_lines": 67,
+                "extents": true,
                 "font": {
                     "face": "Arial",
                     "style": "Regular",
                     "size": 72,
                     "flags": 0
                 },
-                "extents": true,
+                "align": "center",
+                "chatlog_lines": 67,
+                "extents_cx": 1080,
                 "extents_cy": 6000,
-                "extents_cx": 1080
+                "antialiasing": false
             },
             "mixers": 0,
             "sync": 0,
