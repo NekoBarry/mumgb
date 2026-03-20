@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Intro",
-    "current_program_scene": "Intro",
+    "current_scene": "outro_gruese",
+    "current_program_scene": "outro_gruese",
     "scene_order": [
         {
             "name": "Intro"
@@ -217,6 +217,12 @@
         }
     ],
     "saved_projectors": [
+        {
+            "monitor": 1,
+            "type": 2,
+            "geometry": "AdnQywADAAAAAAvAAAAAAAAAEy8AAAQvAAALuAAAAAAAABM3AAAENwAAAAEABAAAB4AAAAu4AAAAAAAAEzcAAAQ3",
+            "alwaysOnTopOverridden": false
+        },
         {
             "monitor": 1,
             "type": 2,
@@ -1319,7 +1325,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.08176463097333908,
+            "volume": 0.1035391092300415,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -3872,7 +3878,7 @@
                     {
                         "name": "wii_theme",
                         "source_uuid": "d0aff57d-bb51-4870-9e55-ee5a67f22c7d",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3982,7 +3988,7 @@
                     {
                         "name": "kristian",
                         "source_uuid": "02f8b76b-04c7-4cf3-91f4-e957f8ae048b",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -7651,20 +7657,20 @@
                         "id": 34,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 948.0,
-                            "y": 527.5
+                            "x": 980.0,
+                            "y": 540.0
                         },
                         "pos_rel": {
-                            "x": -0.021800627931952477,
-                            "y": -0.02318328619003296
+                            "x": 0.03703703731298447,
+                            "y": 0.0
                         },
                         "scale": {
-                            "x": 0.09487368166446686,
-                            "y": 0.09483145922422409
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.09487368166446686,
-                            "y": 0.09483145922422409
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -8154,12 +8160,12 @@
                             "y": -0.005555570125579834
                         },
                         "scale": {
-                            "x": 0.514950156211853,
-                            "y": 0.5151515007019043
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.514950156211853,
-                            "y": 0.5151515007019043
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -11451,12 +11457,12 @@
                         "id": 2,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 44.0,
-                            "y": 425.0
+                            "x": 55.0,
+                            "y": 572.0
                         },
                         "pos_rel": {
-                            "x": -1.6962963342666626,
-                            "y": -0.21296298503875732
+                            "x": -1.6759259700775146,
+                            "y": 0.05925929546356201
                         },
                         "scale": {
                             "x": 0.5445312261581421,
@@ -11686,7 +11692,9 @@
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "show_dacing": [],
+                "show_dacing Hold": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -11965,6 +11973,43 @@
                         "enable": 1,
                         "start_trigger": 0,
                         "duration": 0
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "show_dacing",
+                    "uuid": "354c4c0b-779e-4e4a-8ec8-a930b9a7953a",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "custom_duration": true,
+                        "action": 3,
+                        "canvas": "Main",
+                        "scene": "outro_neu",
+                        "sceneitem": "dancing_mam",
+                        "end_action": 3,
+                        "end_canvas": "Main",
+                        "end_scene": "outro_neu",
+                        "end_sceneitem": "dancing_mam",
+                        "duration": 120000,
+                        "start_trigger": 1,
+                        "end_enable": 1
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -12757,20 +12802,20 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -12946,7 +12991,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -13005,7 +13050,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -13435,19 +13480,19 @@
                         "id": 10,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05136901140213013,
+                            "x": 0.05569896847009659,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": -0.05136901140213013,
+                            "x": 0.05569896847009659,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -13618,7 +13663,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -13677,7 +13722,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -14107,20 +14152,20 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -14290,7 +14335,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -14349,7 +14394,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -14412,7 +14457,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.12330563366413116,
+            "volume": 0.1131412535905838,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -14767,20 +14812,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -15240,7 +15285,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -15299,7 +15344,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -15619,20 +15664,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -16091,7 +16136,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -16150,7 +16195,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -17458,20 +17503,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -17808,7 +17853,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -17867,7 +17912,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -18187,19 +18232,19 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05136901140213013,
+                            "x": 0.05569896847009659,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": -0.05136901140213013,
+                            "x": 0.05569896847009659,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -18667,7 +18712,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -18726,7 +18771,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -20555,20 +20600,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -20905,7 +20950,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -20964,7 +21009,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -21709,20 +21754,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -22059,7 +22104,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -22118,7 +22163,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -22438,20 +22483,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -22788,7 +22833,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -22847,7 +22892,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -23167,20 +23212,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -23517,7 +23562,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -23576,7 +23621,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -23896,20 +23941,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -24246,7 +24291,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -24305,7 +24350,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -25656,20 +25701,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -26006,7 +26051,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -26065,7 +26110,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -26385,20 +26430,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -26735,7 +26780,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -26794,7 +26839,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -30621,20 +30666,20 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -30868,7 +30913,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -30927,7 +30972,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -31620,20 +31665,20 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5924617052078247,
+                            "x": -0.6564211249351501,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.05182614549994469,
-                            "y": 0.06308364123106003
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -31860,7 +31905,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -31919,7 +31964,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -32863,20 +32908,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 605.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5861372351646423,
-                            "y": 0.8148146867752075
+                            "x": -0.6564211249351501,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06245627999305725,
-                            "y": 0.06309144198894501
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "scale_rel": {
-                            "x": -0.06245627999305725,
-                            "y": 0.06309144198894501
+                            "x": 0.05567356199026108,
+                            "y": 0.06300465017557144
                         },
                         "bounds": {
                             "x": 0.0,
@@ -33110,7 +33155,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -33169,7 +33214,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -34965,7 +35010,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.08998201042413712,
+            "volume": 0.060099512338638306,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -35002,7 +35047,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.5,
+            "volume": 0.0,
             "balance": 0.5,
             "enabled": true,
             "muted": false,

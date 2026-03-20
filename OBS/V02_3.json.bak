@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "outro_neu",
-    "current_program_scene": "outro_neu",
+    "current_scene": "Intro",
+    "current_program_scene": "Intro",
     "scene_order": [
         {
             "name": "Intro"
@@ -149,6 +149,9 @@
             "name": "szene020_focus_martin"
         },
         {
+            "name": "szene025_gedicht"
+        },
+        {
             "name": "szene019_karmen"
         },
         {
@@ -213,7 +216,14 @@
             }
         }
     ],
-    "saved_projectors": [],
+    "saved_projectors": [
+        {
+            "monitor": 1,
+            "type": 2,
+            "geometry": "AdnQywADAAAAAAvAAAAAAAAAEy8AAAQvAAALuAAAAAAAABM3AAAENwAAAAEABAAAB4AAAAu4AAAAAAAAEzcAAAQ3",
+            "alwaysOnTopOverridden": false
+        }
+    ],
     "canvases": [],
     "current_transition": "Verschieben",
     "transition_duration": 1500,
@@ -2709,7 +2719,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.2459150105714798,
+            "volume": 0.4619385004043579,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -3497,6 +3507,7 @@
             "settings": {
                 "outline": true,
                 "vertical": false,
+                "text": "Lisa \n& \nTamara ",
                 "font": {
                     "face": "Caveat",
                     "style": "Regular",
@@ -3506,8 +3517,7 @@
                 "align": "right",
                 "color": 4278245375,
                 "outline_size": 10,
-                "outline_color": 4278190080,
-                "text": "Lisa \n& \nTamara "
+                "outline_color": 4278190080
             },
             "mixers": 0,
             "sync": 0,
@@ -3820,8 +3830,8 @@
             "versioned_id": "ffmpeg_source",
             "settings": {
                 "local_file": "C:/Lokale Bilder/mama/sound/The Eagles - 03 - Hotel California.mp3",
-                "restart_on_activate": false,
-                "looping": true
+                "looping": true,
+                "restart_on_activate": false
             },
             "mixers": 255,
             "sync": 0,
@@ -3862,7 +3872,7 @@
                     {
                         "name": "wii_theme",
                         "source_uuid": "d0aff57d-bb51-4870-9e55-ee5a67f22c7d",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3972,7 +3982,7 @@
                     {
                         "name": "kristian",
                         "source_uuid": "02f8b76b-04c7-4cf3-91f4-e957f8ae048b",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -4825,7 +4835,6 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "Martin Heuger",
                 "font": {
                     "face": "Arial",
                     "flags": 0,
@@ -4835,7 +4844,8 @@
                 "color": 16777215,
                 "opacity": 100,
                 "bk_color": 0,
-                "bk_opacity": 0
+                "bk_opacity": 0,
+                "text": "Lisa, Tamara, Isabella, Yvonne"
             },
             "mixers": 0,
             "sync": 0,
@@ -6133,7 +6143,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 39,
+                "id_counter": 43,
                 "items": [
                     {
                         "name": "vid_schimpf",
@@ -7641,20 +7651,20 @@
                         "id": 34,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 980.0,
-                            "y": 540.0
+                            "x": 948.0,
+                            "y": 527.5
                         },
                         "pos_rel": {
-                            "x": 0.03703703731298447,
-                            "y": 0.0
+                            "x": -0.021800627931952477,
+                            "y": -0.02318328619003296
                         },
                         "scale": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.09487368166446686,
+                            "y": 0.09483145922422409
                         },
                         "scale_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.09487368166446686,
+                            "y": 0.09483145922422409
                         },
                         "bounds": {
                             "x": 0.0,
@@ -7806,12 +7816,12 @@
                         "id": 37,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 566.5,
-                            "y": 15.5
+                            "x": 591.0,
+                            "y": 14.5
                         },
                         "pos_rel": {
-                            "x": -0.7287036776542664,
-                            "y": -0.9712963104248047
+                            "x": -0.6833333373069763,
+                            "y": -0.9731481671333313
                         },
                         "scale": {
                             "x": 1.6395833492279053,
@@ -7930,6 +7940,226 @@
                         "scale_rel": {
                             "x": 0.0,
                             "y": 0.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "vid_susi",
+                        "source_uuid": "8703f29b-b0d9-4f4a-94af-0f395b3d6934",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 40,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 472.0,
+                            "y": 47.0
+                        },
+                        "pos_rel": {
+                            "x": -0.9037036895751953,
+                            "y": -0.9129629731178284
+                        },
+                        "scale": {
+                            "x": 1.1589958667755127,
+                            "y": 1.1588234901428223
+                        },
+                        "scale_rel": {
+                            "x": 1.1589958667755127,
+                            "y": 1.1588234901428223
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "txt_susi",
+                        "source_uuid": "f3cc2835-b3df-4de3-b87d-10e5cfec9e1f",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 41,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1069.0,
+                            "y": 466.0
+                        },
+                        "pos_rel": {
+                            "x": 0.20185184478759766,
+                            "y": -0.13703703880310059
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "vid_julian",
+                        "source_uuid": "1c95607e-e36f-497e-8aac-6f297e440a57",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 42,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 888.0,
+                            "y": 60.0
+                        },
+                        "pos_rel": {
+                            "x": -0.13333334028720856,
+                            "y": -0.8888888955116272
+                        },
+                        "scale": {
+                            "x": 1.1276150941848755,
+                            "y": 1.1270588636398315
+                        },
+                        "scale_rel": {
+                            "x": 1.1276150941848755,
+                            "y": 1.1270588636398315
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "txt_julian",
+                        "source_uuid": "978a4488-c7a1-4952-b0ba-8ccadf390163",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 43,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 506.0,
+                            "y": 537.0
+                        },
+                        "pos_rel": {
+                            "x": -0.8407407402992249,
+                            "y": -0.005555570125579834
+                        },
+                        "scale": {
+                            "x": 0.514950156211853,
+                            "y": 0.5151515007019043
+                        },
+                        "scale_rel": {
+                            "x": 0.514950156211853,
+                            "y": 0.5151515007019043
                         },
                         "bounds": {
                             "x": 0.0,
@@ -8130,7 +8360,27 @@
                 "libobs.show_scene_item.38": [],
                 "libobs.hide_scene_item.38": [],
                 "libobs.show_scene_item.39": [],
-                "libobs.hide_scene_item.39": []
+                "libobs.hide_scene_item.39": [],
+                "susi_01": [],
+                "susi_01 Hold": [],
+                "libobs.show_scene_item.40": [],
+                "libobs.hide_scene_item.40": [],
+                "libobs.show_scene_item.41": [],
+                "libobs.hide_scene_item.41": [],
+                "libobs.show_scene_item.42": [],
+                "libobs.hide_scene_item.42": [],
+                "libobs.show_scene_item.43": [],
+                "libobs.hide_scene_item.43": [],
+                "susi_02": [],
+                "susi_02 Hold": [],
+                "susi_03": [],
+                "susi_03 Hold": [],
+                "julian_01": [],
+                "julian_01 Hold": [],
+                "julian_02": [],
+                "julian_02 Hold": [],
+                "julian_03": [],
+                "julian_03 Hold": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10414,7 +10664,7 @@
                         "end_enable": 1,
                         "end_scene": "outro_gruese",
                         "end_sceneitem": "vid_isa",
-                        "next_move": "anja_01",
+                        "next_move": "susi_01",
                         "scene": "outro_gruese",
                         "sceneitem": "vid_isa",
                         "simultaneous_move": "isa_02",
@@ -10452,24 +10702,24 @@
                         },
                         "change_visibility": 1,
                         "crop": {
-                            "bottom": 0,
-                            "bottom_sign": " ",
-                            "left": 0,
+                            "left": 0.0,
                             "left_sign": " ",
-                            "right": 0,
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
                             "right_sign": " ",
-                            "top": 0,
-                            "top_sign": " "
+                            "bottom": 0.0,
+                            "bottom_sign": " "
                         },
                         "end_delay": 1500,
                         "next_move": "isa_03",
                         "pos": {
-                            "x": 626,
+                            "x": 626.0,
                             "x_sign": " ",
-                            "y": 295,
+                            "y": 295.0,
                             "y_sign": " "
                         },
-                        "rot": 0,
+                        "rot": 0.0,
                         "rot_sign": " ",
                         "scale": {
                             "x": 0.6100000143051147,
@@ -10513,28 +10763,28 @@
                         },
                         "change_visibility": 2,
                         "crop": {
-                            "bottom": 0,
-                            "bottom_sign": " ",
-                            "left": 0,
+                            "left": 0.0,
                             "left_sign": " ",
-                            "right": 0,
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
                             "right_sign": " ",
-                            "top": 0,
-                            "top_sign": " "
+                            "bottom": 0.0,
+                            "bottom_sign": " "
                         },
                         "next_move": "",
                         "pos": {
-                            "x": 626,
+                            "x": 626.0,
                             "x_sign": " ",
-                            "y": 295,
+                            "y": 295.0,
                             "y_sign": " "
                         },
-                        "rot": 0,
+                        "rot": 0.0,
                         "rot_sign": " ",
                         "scale": {
-                            "x": 0,
+                            "x": 0.0,
                             "x_sign": " ",
-                            "y": 0,
+                            "y": 0.0,
                             "y_sign": " "
                         },
                         "source": "txt_isa",
@@ -10845,6 +11095,328 @@
                     "deinterlace_field_order": 0,
                     "monitoring_type": 0,
                     "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "susi_01",
+                    "uuid": "20973b18-0e99-4c25-be39-34ab372b14f8",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "action": 3,
+                        "canvas": "Main",
+                        "custom_duration": true,
+                        "enable": 0,
+                        "end_action": 3,
+                        "end_canvas": "Main",
+                        "end_enable": 1,
+                        "end_scene": "outro_gruese",
+                        "scene": "outro_gruese",
+                        "duration": 23000,
+                        "sceneitem": "vid_susi",
+                        "end_sceneitem": "vid_susi",
+                        "simultaneous_move": "susi_02",
+                        "next_move": "julian_01"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "susi_02",
+                    "uuid": "751fe90b-211b-466e-8a3c-58aa4b5989a2",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "change_visibility": 1,
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "end_delay": 1500,
+                        "pos": {
+                            "x": 1069.0,
+                            "x_sign": " ",
+                            "y": 466.0,
+                            "y_sign": " "
+                        },
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "scale": {
+                            "x": 0.5529999732971191,
+                            "x_sign": " ",
+                            "y": 0.5529999732971191,
+                            "y_sign": " "
+                        },
+                        "duration": 1500,
+                        "transform_text": "pos: x 1069.0 y 466.0 rot: 0.0 scale: x 0.553 y 0.553 crop: l 0 t 0 r 0 b 0",
+                        "source": "txt_susi",
+                        "next_move": "susi_03"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "susi_03",
+                    "uuid": "f03a422e-7cd2-44e5-a633-23f080de1258",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "change_visibility": 2,
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "next_move": "",
+                        "pos": {
+                            "x": 1069.0,
+                            "x_sign": " ",
+                            "y": 466.0,
+                            "y_sign": " "
+                        },
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "scale": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "start_delay": 19000,
+                        "duration": 1500,
+                        "source": "txt_susi",
+                        "transform_text": "pos: x 1069.0 y 466.0 rot: 0.0 scale: x 0. y 0. crop: l 0 t 0 r 0 b 0"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "julian_01",
+                    "uuid": "3a46663b-1856-4c06-ba0c-3653a7875da0",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "action": 3,
+                        "canvas": "Main",
+                        "custom_duration": true,
+                        "enable": 0,
+                        "end_action": 3,
+                        "end_canvas": "Main",
+                        "end_enable": 1,
+                        "end_scene": "outro_gruese",
+                        "next_move": "anja_01",
+                        "scene": "outro_gruese",
+                        "duration": 10000,
+                        "sceneitem": "vid_julian",
+                        "end_sceneitem": "vid_julian",
+                        "simultaneous_move": "julian_02"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "julian_02",
+                    "uuid": "9165dacb-590a-4ae1-9c2c-d80afec43fed",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "change_visibility": 1,
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "end_delay": 1500,
+                        "pos": {
+                            "x": 506.0,
+                            "x_sign": " ",
+                            "y": 537.0,
+                            "y_sign": " "
+                        },
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "scale": {
+                            "x": 0.514950156211853,
+                            "x_sign": " ",
+                            "y": 0.5151515007019043,
+                            "y_sign": " "
+                        },
+                        "transform_text": "pos: x 506.0 y 537.0 rot: 0.0 scale: x 0.515 y 0.515 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500,
+                        "source": "txt_julian",
+                        "next_move": "julian_03"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "julian_03",
+                    "uuid": "7310a9d9-911f-4406-bab1-16ebf6662211",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "change_visibility": 2,
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "next_move": "",
+                        "pos": {
+                            "x": 506.0,
+                            "x_sign": " ",
+                            "y": 537.0,
+                            "y_sign": " "
+                        },
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "scale": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "start_delay": 6000,
+                        "duration": 1500,
+                        "source": "txt_julian",
+                        "transform_text": "pos: x 506.0 y 537.0 rot: 0.0 scale: x 0 y 0 crop: l 0 t 0 r 0 b 0"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
                 }
             ]
         },
@@ -10971,7 +11543,7 @@
                     {
                         "name": "dia_outro",
                         "source_uuid": "a801cf27-710b-4da6-8700-b7cfc6408ef1",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11095,8 +11667,18 @@
                 "OBSBasic.SelectScene": [],
                 "disable_dia": [],
                 "disable_dia Hold": [],
+                "disable_dia 2": [],
+                "disable_dia 2 Hold": [],
+                "shrink_dia": [],
+                "shrink_dia Hold": [],
                 "show_dia": [],
                 "show_dia Hold": [],
+                "hide_browser": [],
+                "hide_browser Hold": [],
+                "show_browser": [],
+                "show_browser Hold": [],
+                "hide_browser 2": [],
+                "hide_browser 2 Hold": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.1": [],
@@ -11104,17 +11686,7 @@
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": [],
-                "hide_browser": [],
-                "hide_browser Hold": [],
-                "show_browser": [],
-                "show_browser Hold": [],
-                "disable_dia 2": [],
-                "disable_dia 2 Hold": [],
-                "shrink_dia": [],
-                "shrink_dia Hold": [],
-                "hide_browser 2": [],
-                "hide_browser 2 Hold": []
+                "libobs.hide_scene_item.5": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -11168,9 +11740,9 @@
                         "scene": "outro_neu",
                         "sceneitem": "dia_outro",
                         "start_trigger": 1,
-                        "duration": 120000,
                         "simultaneous_move": "shrink_dia",
-                        "next_move": "show_dia"
+                        "next_move": "show_dia",
+                        "duration": 120000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11228,10 +11800,10 @@
                         },
                         "source": "dia_outro",
                         "start_trigger": 0,
-                        "duration": 0,
-                        "transform_text": "pos: x 960.0 y 540.0 rot: 0.0 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "start_delay": 1200,
-                        "next_move": ""
+                        "next_move": "",
+                        "duration": 0,
+                        "transform_text": "pos: x 960.0 y 540.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11291,10 +11863,10 @@
                         "source": "dia_outro",
                         "start_delay": 0,
                         "start_trigger": 0,
-                        "transform_text": "pos: x 329.0 y 15.5 rot: 0.0 bounds: x 1262.000 y 1049.000 crop: l 0 t 0 r 0 b 0",
+                        "simultaneous_move": "hide_browser 2",
                         "duration": 3000,
                         "easing_match": 2,
-                        "simultaneous_move": "hide_browser 2"
+                        "transform_text": "pos: x 329.0 y 15.5 rot: 0.0 scale: x 0.856 y 0.856 bounds: x 1262.000 y 1049.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11326,8 +11898,8 @@
                         "scene": "outro_neu",
                         "sceneitem": "credits",
                         "enable": 1,
-                        "duration": 122000,
-                        "start_trigger": 1
+                        "start_trigger": 1,
+                        "duration": 122000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11358,8 +11930,8 @@
                         "canvas": "Main",
                         "scene": "outro_neu",
                         "sceneitem": "credits",
-                        "duration": 0,
-                        "start_trigger": 1
+                        "start_trigger": 1,
+                        "duration": 0
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11720,7 +12292,7 @@
             "mixers": 254,
             "sync": 0,
             "flags": 0,
-            "volume": 1.0,
+            "volume": 0.6236796975135803,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -12185,20 +12757,20 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -12366,15 +12938,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -12425,7 +12997,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -12433,7 +13005,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -12863,19 +13435,19 @@
                         "id": 10,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.056556932628154755,
+                            "x": -0.05136901140213013,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": 0.056556932628154755,
+                            "x": -0.05136901140213013,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -13038,15 +13610,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -13097,7 +13669,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -13105,7 +13677,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -13535,20 +14107,20 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -13710,15 +14282,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -13769,7 +14341,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -13777,7 +14349,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -14195,20 +14767,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -14660,15 +15232,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -14719,7 +15291,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -14727,7 +15299,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -15047,20 +15619,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -15511,15 +16083,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -15570,7 +16142,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -15578,7 +16150,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -16886,20 +17458,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -17228,15 +17800,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -17287,7 +17859,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -17295,7 +17867,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -17615,19 +18187,19 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.056556932628154755,
+                            "x": -0.05136901140213013,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": 0.056556932628154755,
+                            "x": -0.05136901140213013,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -18020,6 +18592,8 @@
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.7": [],
                 "libobs.hide_scene_item.7": [],
+                "libobs.show_scene_item.9": [],
+                "libobs.hide_scene_item.9": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
@@ -18030,8 +18604,6 @@
                 "libobs.hide_scene_item.6": [],
                 "libobs.show_scene_item.10": [],
                 "libobs.hide_scene_item.10": [],
-                "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": [],
                 "libobs.show_scene_item.12": [],
                 "libobs.hide_scene_item.12": [],
                 "libobs.show_scene_item.13": [],
@@ -18087,15 +18659,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -18146,7 +18718,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -18154,7 +18726,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -18207,9 +18779,9 @@
                         },
                         "source": "kapitän_ohne_bg.png",
                         "start_trigger": 1,
-                        "transform_text": "pos: x 775.0 y 740.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "change_visibility": 5,
                         "custom_duration": false,
-                        "change_visibility": 5
+                        "transform_text": "pos: x 775.0 y 740.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -18266,11 +18838,11 @@
                             "y_sign": " "
                         },
                         "source": "kapitän_ohne_bg.png",
-                        "transform_text": "pos: x 275.0 y 240.0 rot: 0.0 scale: x 1.000 y 1.000 crop: l 0 t 0 r 0 b 0",
+                        "change_visibility": 1,
                         "duration": 3000,
                         "easing_function_match": 4,
                         "curve_match": 1,
-                        "change_visibility": 1
+                        "transform_text": "pos: x 275.0 y 240.0 rot: 0.0 scale: x 1.000 y 1.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -18461,9 +19033,9 @@
                         },
                         "source": "05_opa",
                         "start_delay": 0,
-                        "transform_text": "pos: x 581.0 y 214.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 0,
-                        "easing_match": 0
+                        "easing_match": 0,
+                        "transform_text": "pos: x 581.0 y 214.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -19983,20 +20555,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -20325,15 +20897,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -20384,7 +20956,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -20392,7 +20964,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -21137,20 +21709,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -21479,15 +22051,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -21538,7 +22110,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -21546,7 +22118,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -21568,7 +22140,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 10,
+                "id_counter": 11,
                 "items": [
                     {
                         "name": "bg_video",
@@ -21866,20 +22438,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -22064,6 +22636,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "wheels_on_the_bus",
+                        "source_uuid": "a842d250-0129-4b26-bcb7-ff0122f096f3",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 11,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -196.0,
+                            "y": 159.0
+                        },
+                        "pos_rel": {
+                            "x": -2.1407406330108643,
+                            "y": -0.7055555582046509
+                        },
+                        "scale": {
+                            "x": 0.09270833432674408,
+                            "y": 0.09259258955717087
+                        },
+                        "scale_rel": {
+                            "x": 0.09270833432674408,
+                            "y": 0.09259258955717087
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -22101,7 +22728,9 @@
                 "libobs.show_scene_item.8": [],
                 "libobs.hide_scene_item.8": [],
                 "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": []
+                "libobs.hide_scene_item.9": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -22151,15 +22780,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -22210,7 +22839,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -22218,7 +22847,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -22538,20 +23167,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -22880,15 +23509,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -22939,7 +23568,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -22947,7 +23576,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -23267,20 +23896,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -23609,15 +24238,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -23668,7 +24297,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -23676,7 +24305,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -23698,7 +24327,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 4,
+                "id_counter": 5,
                 "items": [
                     {
                         "name": "bg_video",
@@ -23919,6 +24548,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "wheels_on_the_bus",
+                        "source_uuid": "a842d250-0129-4b26-bcb7-ff0122f096f3",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -196.0,
+                            "y": 159.0
+                        },
+                        "pos_rel": {
+                            "x": -2.1407406330108643,
+                            "y": -0.7055555582046509
+                        },
+                        "scale": {
+                            "x": 0.09270833432674408,
+                            "y": 0.09259258955717087
+                        },
+                        "scale_rel": {
+                            "x": 0.09270833432674408,
+                            "y": 0.09259258955717087
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -23958,7 +24642,9 @@
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
-                "libobs.hide_scene_item.4": []
+                "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -24672,7 +25358,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 11,
+                "id_counter": 12,
                 "items": [
                     {
                         "name": "bg_video",
@@ -24970,20 +25656,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -25168,6 +25854,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "wheels_on_the_bus",
+                        "source_uuid": "a842d250-0129-4b26-bcb7-ff0122f096f3",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 12,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -196.0,
+                            "y": 159.0
+                        },
+                        "pos_rel": {
+                            "x": -2.1407406330108643,
+                            "y": -0.7055555582046509
+                        },
+                        "scale": {
+                            "x": 0.09270833432674408,
+                            "y": 0.09259258955717087
+                        },
+                        "scale_rel": {
+                            "x": 0.09270833432674408,
+                            "y": 0.09259258955717087
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -25205,7 +25946,9 @@
                 "libobs.show_scene_item.8": [],
                 "libobs.hide_scene_item.8": [],
                 "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": []
+                "libobs.hide_scene_item.9": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -25255,15 +25998,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -25314,7 +26057,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -25322,7 +26065,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -25642,20 +26385,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -25984,15 +26727,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -26043,7 +26786,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -26051,7 +26794,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -28123,7 +28866,7 @@
                     {
                         "name": "urlaub_06",
                         "source_uuid": "3e6eb15a-c2d7-4e6c-b305-cc9bd04ae1f1",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 4.900000095367432,
                         "scale_ref": {
@@ -28141,12 +28884,12 @@
                         "id": 11,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 595.5,
-                            "y": 195.5
+                            "x": 960.0,
+                            "y": 540.0
                         },
                         "pos_rel": {
-                            "x": -0.675000011920929,
-                            "y": -0.6379629373550415
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale": {
                             "x": 1.0,
@@ -28157,12 +28900,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 1138.0,
-                            "y": 712.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds_rel": {
-                            "x": 2.107407331466675,
-                            "y": 1.3185185194015503
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -29878,20 +30621,20 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -30117,15 +30860,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -30176,7 +30919,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -30184,7 +30927,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -30877,20 +31620,20 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 605.5,
+                            "x": 640.0,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.6569337248802185,
+                            "x": -0.5924617052078247,
                             "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "scale_rel": {
-                            "x": 0.05653498321771622,
-                            "y": 0.0630040168762207
+                            "x": -0.05182614549994469,
+                            "y": 0.06308364123106003
                         },
                         "bounds": {
                             "x": 0.0,
@@ -31109,15 +31852,15 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -31168,7 +31911,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -31176,7 +31919,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -31198,7 +31941,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 7,
                 "items": [
                     {
                         "name": "bg_video",
@@ -31474,6 +32217,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "wheels_on_the_bus",
+                        "source_uuid": "a842d250-0129-4b26-bcb7-ff0122f096f3",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 7,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -196.0,
+                            "y": 159.0
+                        },
+                        "pos_rel": {
+                            "x": -2.1407406330108643,
+                            "y": -0.7055555582046509
+                        },
+                        "scale": {
+                            "x": 0.09270833432674408,
+                            "y": 0.09259258955717087
+                        },
+                        "scale_rel": {
+                            "x": 0.09270833432674408,
+                            "y": 0.09259258955717087
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -31507,7 +32305,9 @@
                 "libobs.show_scene_item.5": [],
                 "libobs.hide_scene_item.5": [],
                 "libobs.show_scene_item.6": [],
-                "libobs.hide_scene_item.6": []
+                "libobs.hide_scene_item.6": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -31560,8 +32360,8 @@
                         "source": "enkel_01",
                         "start_delay": 7000,
                         "start_trigger": 1,
-                        "transform_text": "pos: x 379.0 y 561.0 rot: 0.0 scale: x 0.498 y 0.499 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 379.0 y 561.0 rot: 0.0 scale: x 0.498 y 0.499 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -31619,8 +32419,8 @@
                             "y_sign": " "
                         },
                         "source": "enkel_02",
-                        "transform_text": "pos: x 1184.0 y 563.0 rot: 0.0 scale: x 0.498 y 0.499 crop: l 0 t 0 r 0 b 0",
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 1184.0 y 563.0 rot: 0.0 scale: x 0.498 y 0.499 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -31737,6 +32537,632 @@
                         "source": "enkel_02",
                         "start_trigger": 2,
                         "transform_text": "pos: x 1550.0 y 640.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "szene025_gedicht",
+            "uuid": "343a6dfe-04d7-4e85-a8a3-e10097b0fb7e",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 7,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "bg_video",
+                        "source_uuid": "2b066b83-941a-414b-8ca1-d8c95bd0ac90",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -29.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.8314814567565918,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.5490000247955322,
+                            "y": 1.5399999618530273
+                        },
+                        "scale_rel": {
+                            "x": 1.5490000247955322,
+                            "y": 1.5399999618530273
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "weichzeichner",
+                        "source_uuid": "68e9367d-1fb3-4210-99bc-da2df752d7ae",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 2,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "außen_cam",
+                        "source_uuid": "914ed3db-a097-41fb-aecc-be18a2db3f14",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 3,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 83.5,
+                            "y": 47.0
+                        },
+                        "pos_rel": {
+                            "x": -1.6231482028961182,
+                            "y": -0.9129629731178284
+                        },
+                        "scale": {
+                            "x": 0.9130208492279053,
+                            "y": 0.9129629731178284
+                        },
+                        "scale_rel": {
+                            "x": 0.9130208492279053,
+                            "y": 0.9129629731178284
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "lower_third_mod",
+                        "source_uuid": "99950e1d-197a-4e41-96a7-f48f5e69f4e1",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 4,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 869.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": 0.6092592477798462
+                        },
+                        "scale": {
+                            "x": 1.508248209953308,
+                            "y": 0.6584362387657166
+                        },
+                        "scale_rel": {
+                            "x": 1.508248209953308,
+                            "y": 0.6584362387657166
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Martin",
+                        "source_uuid": "b6c76710-8c7c-4c2b-bf57-cbca9ed1006e",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 343.0,
+                            "y": 910.0
+                        },
+                        "pos_rel": {
+                            "x": -1.1425925493240356,
+                            "y": 0.6851851940155029
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "shamrock",
+                        "source_uuid": "d48faf03-6154-4e44-a0dc-cb565790c4d8",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 6,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 643.5,
+                            "y": 980.0
+                        },
+                        "pos_rel": {
+                            "x": -0.5861372351646423,
+                            "y": 0.8148146867752075
+                        },
+                        "scale": {
+                            "x": -0.06245627999305725,
+                            "y": 0.06309144198894501
+                        },
+                        "scale_rel": {
+                            "x": -0.06245627999305725,
+                            "y": 0.06309144198894501
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "LIVE 2",
+                        "source_uuid": "dacd6e7e-1b05-4832-a4e5-4862a80de1e0",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 7,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 652.5,
+                            "y": 971.0
+                        },
+                        "pos_rel": {
+                            "x": -0.5694444179534912,
+                            "y": 0.7981481552124023
+                        },
+                        "scale": {
+                            "x": 0.23999999463558197,
+                            "y": 0.23828125
+                        },
+                        "scale_rel": {
+                            "x": 0.23999999463558197,
+                            "y": 0.23828125
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": [],
+                "libobs.show_scene_item.4": [],
+                "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.6": [],
+                "libobs.hide_scene_item.6": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": [],
+                "disable_cam": [],
+                "disable_cam Hold": [],
+                "Move Action": [],
+                "Move Action Hold": [],
+                "sharmrock+": [],
+                "sharmrock+ Hold": [],
+                "sharmrock-": [],
+                "sharmrock- Hold": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {
+                "transition": "Überblende",
+                "transition_duration": 1500
+            },
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "disable_cam",
+                    "uuid": "1d06e247-b45d-4049-8a5d-da929743e05e",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "action": 3,
+                        "canvas": "Main",
+                        "custom_duration": true,
+                        "enable": 1,
+                        "next_move": "Move Action",
+                        "scene": "Begin, Focus on Mod",
+                        "sceneitem": "Mod_Cam",
+                        "start_trigger": 1
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "Move Action",
+                    "uuid": "1c0bf4c5-7426-4247-8136-c065462a1954",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "action": 3,
+                        "canvas": "Main",
+                        "custom_duration": true,
+                        "next_move": "",
+                        "scene": "Begin, Focus on Mod",
+                        "sceneitem": "Mod_Cam"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "sharmrock+",
+                    "uuid": "93563b61-a18d-4e67-8a48-c66e3508bf83",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "bounds": {
+                            "x": 0,
+                            "x_sign": " ",
+                            "y": 0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "bottom": 0,
+                            "bottom_sign": " ",
+                            "left": 0,
+                            "left_sign": " ",
+                            "right": 0,
+                            "right_sign": " ",
+                            "top": 0,
+                            "top_sign": " "
+                        },
+                        "next_move": "sharmrock-",
+                        "pos": {
+                            "x": 603.5,
+                            "x_sign": " ",
+                            "y": 980,
+                            "y_sign": " "
+                        },
+                        "rot": 0,
+                        "rot_sign": " ",
+                        "scale": {
+                            "x": 0.06199999898672104,
+                            "x_sign": " ",
+                            "y": 0.06300000101327896,
+                            "y_sign": " "
+                        },
+                        "source": "shamrock",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "sharmrock-",
+                    "uuid": "789ee426-90bb-4376-9138-b7c50ce7e3c3",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "bounds": {
+                            "x": 0,
+                            "x_sign": " ",
+                            "y": 0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "bottom": 0,
+                            "bottom_sign": " ",
+                            "left": 0,
+                            "left_sign": " ",
+                            "right": 0,
+                            "right_sign": " ",
+                            "top": 0,
+                            "top_sign": " "
+                        },
+                        "next_move": "sharmrock+",
+                        "pos": {
+                            "x": 643.5,
+                            "x_sign": " ",
+                            "y": 980,
+                            "y_sign": " "
+                        },
+                        "rot": 0,
+                        "rot_sign": " ",
+                        "scale": {
+                            "x": -0.0625,
+                            "x_sign": " ",
+                            "y": 0.06309147924184799,
+                            "y_sign": " "
+                        },
+                        "source": "shamrock",
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -32131,6 +33557,32 @@
         },
         {
             "prev_ver": 536870916,
+            "name": "txt_julian",
+            "uuid": "978a4488-c7a1-4952-b0ba-8ccadf390163",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "Julian"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
             "name": "txt_kristian",
             "uuid": "988d596d-bf1d-4af5-920c-afeb46f35866",
             "id": "text_gdiplus",
@@ -32294,6 +33746,32 @@
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "text": "Sigrun\n&\nReiner\n\nyeah !!"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "txt_susi",
+            "uuid": "f3cc2835-b3df-4de3-b87d-10e5cfec9e1f",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "Susanne"
             },
             "mixers": 0,
             "sync": 0,
@@ -32874,6 +34352,42 @@
         },
         {
             "prev_ver": 536870916,
+            "name": "vid_julian",
+            "uuid": "1c95607e-e36f-497e-8aac-6f297e440a57",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/Lokale Bilder/wuensche/julian.mp4",
+                "close_when_inactive": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 2,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
             "name": "vid_koba_tyla",
             "uuid": "7a65882f-1de8-4c54-9eb3-b849b9540efc",
             "id": "ffmpeg_source",
@@ -33278,6 +34792,42 @@
         },
         {
             "prev_ver": 536870916,
+            "name": "vid_susi",
+            "uuid": "8703f29b-b0d9-4f4a-94af-0f395b3d6934",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "close_when_inactive": true,
+                "local_file": "C:/Lokale Bilder/wuensche/susanne.mp4"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 2,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
             "name": "vid_taenzer",
             "uuid": "5b252565-9483-49ab-812d-3f22e7216233",
             "id": "ffmpeg_source",
@@ -33403,6 +34953,43 @@
         },
         {
             "prev_ver": 536870916,
+            "name": "wheels_on_the_bus",
+            "uuid": "a842d250-0129-4b26-bcb7-ff0122f096f3",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/Lokale Bilder/mama/sound/The Wheels On The Bus.mp4",
+                "close_when_inactive": true,
+                "looping": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.08998201042413712,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 2,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
             "name": "wii_theme",
             "uuid": "d0aff57d-bb51-4870-9e55-ee5a67f22c7d",
             "id": "ffmpeg_source",
@@ -33415,7 +35002,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.0,
+            "volume": 0.5,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
