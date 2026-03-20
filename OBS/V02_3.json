@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "short_news",
-    "current_program_scene": "short_news",
+    "current_scene": "outro_neu",
+    "current_program_scene": "outro_neu",
     "scene_order": [
         {
             "name": "Intro"
@@ -152,6 +152,9 @@
             "name": "outro"
         },
         {
+            "name": "outro_neu"
+        },
+        {
             "name": "template"
         },
         {
@@ -210,20 +213,13 @@
             }
         }
     ],
-    "saved_projectors": [
-        {
-            "monitor": 1,
-            "type": 2,
-            "geometry": "AdnQywADAAD///YIAAAAAP////cAAAWX///2AAAAAAD/////AAAFnwAAAAAAAAAADXD///YAAAAAAP////8AAAWf",
-            "alwaysOnTopOverridden": false
-        }
-    ],
+    "saved_projectors": [],
     "canvases": [],
     "current_transition": "Verschieben",
     "transition_duration": 1500,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -11,
+    "scaling_level": -1,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
@@ -703,10 +699,10 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "hotkeys": {
-                "Move Value": [],
-                "Move Value Hold": [],
-                "Move Value 2": [],
-                "Move Value 2 Hold": []
+                "size_heart": [],
+                "size_heart Hold": [],
+                "big_heart": [],
+                "big_heart Hold": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -722,15 +718,15 @@
                     "settings": {
                         "rectangle_corner_type": 1,
                         "shape_feather_type": 1,
-                        "shape_center_x": 2000.0,
-                        "position_x": 2000.0,
-                        "shape_center_y": 1126.0,
-                        "position_y": 1126.0,
-                        "mask_gradient_position": 2000.0,
                         "mask_source_width": 4000,
                         "mask_source_height": 2252,
                         "shape_type": 6,
-                        "heart_size": 6000.0
+                        "shape_center_x": 2000.0,
+                        "shape_center_y": 1126.0,
+                        "position_x": 2000.0,
+                        "position_y": 1126.0,
+                        "heart_size": 6000.0,
+                        "mask_gradient_position": 2000.0
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -762,10 +758,10 @@
                         "value_type": 2,
                         "setting_float_min": 2029.0,
                         "setting_float_max": 2029.0,
-                        "duration": 3000,
                         "start_trigger": 1,
                         "start_delay": 3000,
-                        "next_move": ""
+                        "next_move": "",
+                        "duration": 3000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -1661,26 +1657,12 @@
                 ],
                 "disable_cam": [],
                 "disable_cam Hold": [],
-                "Move Action": [],
-                "Move Action Hold": [],
+                "enable_cam": [],
+                "enable_cam Hold": [],
                 "stop_bg_sound": [],
                 "stop_bg_sound Hold": [],
                 "start_bg_sound": [],
                 "start_bg_sound Hold": [],
-                "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
-                "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": [],
-                "libobs.show_scene_item.13": [],
-                "libobs.hide_scene_item.13": [],
-                "libobs.show_scene_item.19": [],
-                "libobs.hide_scene_item.19": [],
-                "libobs.show_scene_item.14": [],
-                "libobs.hide_scene_item.14": [],
-                "libobs.show_scene_item.18": [],
-                "libobs.hide_scene_item.18": [],
                 "show_bg_video": [],
                 "show_bg_video Hold": [],
                 "hide_bg_video": [],
@@ -1702,7 +1684,21 @@
                 "hide_tagesschau": [],
                 "hide_tagesschau Hold": [],
                 "show_tagesschau": [],
-                "show_tagesschau Hold": []
+                "show_tagesschau Hold": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.10": [],
+                "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.19": [],
+                "libobs.hide_scene_item.19": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": [],
+                "libobs.show_scene_item.18": [],
+                "libobs.hide_scene_item.18": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2167,10 +2163,10 @@
                         },
                         "source": "Mod_Cam",
                         "start_delay": 5000,
-                        "custom_duration": false,
                         "change_visibility": 0,
                         "next_move": "enable_cam",
-                        "start_trigger": 0
+                        "start_trigger": 0,
+                        "custom_duration": false
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -2617,7 +2613,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.5379746556282043,
+            "volume": 0.2459150105714798,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -2679,14 +2675,19 @@
         },
         {
             "prev_ver": 536870916,
-            "name": "Dancing",
-            "uuid": "32e20a80-08ca-435d-9476-f2ae9bf84636",
-            "id": "ffmpeg_source",
-            "versioned_id": "ffmpeg_source",
+            "name": "credits",
+            "uuid": "0c7578ea-0fee-4fc3-8567-b1f556dbd836",
+            "id": "browser_source",
+            "versioned_id": "browser_source",
             "settings": {
-                "local_file": "C:/Git/mumgb/OBS/assets/video/dancing.mp4",
-                "looping": true,
-                "clear_on_media_end": false
+                "url": "C:/Git/mumgb/OBS/assets/src/outro_credits.html",
+                "is_local_file": true,
+                "local_file": "C:/Git/mumgb/OBS/assets/src/outro_credits.html",
+                "css": "",
+                "shutdown": true,
+                "restart_when_active": true,
+                "width": 1920,
+                "height": 1080
             },
             "mixers": 255,
             "sync": 0,
@@ -2694,7 +2695,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": true,
+            "muted": false,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2704,45 +2705,12 @@
                 "libobs.unmute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
-                "MediaSource.Restart": [],
-                "MediaSource.Play": [],
-                "MediaSource.Pause": [],
-                "MediaSource.Stop": []
+                "ObsBrowser.Refresh": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {},
-            "filters": [
-                {
-                    "prev_ver": 536870916,
-                    "name": "Filter Green",
-                    "uuid": "c93f49f8-054d-494b-a8d6-8cfed138a7be",
-                    "id": "color_key_filter",
-                    "versioned_id": "color_key_filter_v2",
-                    "settings": {
-                        "opacity": 1,
-                        "key_color_type": "green",
-                        "similarity": 706
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": true,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                }
-            ]
+            "private_settings": {}
         },
         {
             "prev_ver": 536870916,
@@ -2773,6 +2741,96 @@
                 "MediaSource.Play": [],
                 "MediaSource.Pause": [],
                 "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "dia_outro",
+            "uuid": "a801cf27-710b-4da6-8700-b7cfc6408ef1",
+            "id": "slideshow",
+            "versioned_id": "slideshow_v2",
+            "settings": {
+                "playback_behavior": "stop_restart",
+                "playback_mode": "random",
+                "hide": true,
+                "files": [
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene01",
+                        "uuid": "1abc2fad-89e2-44e4-8f6a-ce762c701899",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene02",
+                        "uuid": "9e99daba-16c0-43b6-8586-3d28b3737f27",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene04",
+                        "uuid": "1fe9910f-7e3b-4fc0-b37b-c0b12085fcb2",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene08",
+                        "uuid": "2f894f4f-b9d2-4493-9fb4-127fdc3cce18",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene23",
+                        "uuid": "a5c56889-e2b8-43ef-97d1-fb62b8169085",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene09",
+                        "uuid": "7336e1fd-ae34-4886-ad6d-17d3a7348cf1",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene10",
+                        "uuid": "d9afa6a4-303d-4b9b-8583-ffb2f6432a67",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene15",
+                        "uuid": "05406206-fccd-44b6-98e7-835c140d1066",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/Lokale Bilder/mama/szene16",
+                        "uuid": "24f29c88-df03-4d8d-aae8-fdef5106e023",
+                        "selected": false,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "SlideShow.PlayPause": [],
+                "SlideShow.Restart": [],
+                "SlideShow.Stop": [],
+                "SlideShow.NextSlide": [],
+                "SlideShow.PreviousSlide": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -3300,14 +3358,14 @@
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "text": "Isabella\n&\nYvonne",
-                "color": 4278245375,
                 "gradient": false,
+                "outline": true,
+                "color": 4278245375,
                 "gradient_color": 4294901760,
                 "gradient_opacity": 56,
                 "gradient_dir": 176.3,
-                "outline": true,
-                "outline_color": 4278190080,
-                "outline_size": 10
+                "outline_size": 10,
+                "outline_color": 4278190080
             },
             "mixers": 0,
             "sync": 0,
@@ -3335,9 +3393,9 @@
             "settings": {
                 "text": "Lisa\n&\nTamara",
                 "vertical": false,
+                "outline": true,
                 "align": "right",
                 "color": 4278245375,
-                "outline": true,
                 "outline_size": 10,
                 "outline_color": 4278190080
             },
@@ -3687,7 +3745,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 11,
                 "items": [
                     {
                         "name": "wii_theme",
@@ -3800,61 +3858,6 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Dancing",
-                        "source_uuid": "32e20a80-08ca-435d-9476-f2ae9bf84636",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 3,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
                         "name": "Intro_Counter",
                         "source_uuid": "2ba89b51-7900-4c89-99f4-500d21a6f84c",
                         "visible": true,
@@ -3908,6 +3911,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "kristian",
+                        "source_uuid": "02f8b76b-04c7-4cf3-91f4-e957f8ae048b",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 8,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 603.0,
+                            "y": 61.0
+                        },
+                        "pos_rel": {
+                            "x": -0.6611111164093018,
+                            "y": -0.8870370388031006
+                        },
+                        "scale": {
+                            "x": 0.6611111164093018,
+                            "y": 0.6609014868736267
+                        },
+                        "scale_rel": {
+                            "x": 0.6611111164093018,
+                            "y": 0.6609014868736267
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -3930,10 +3988,10 @@
                 "libobs.hide_scene_item.6": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.8": [],
+                "libobs.hide_scene_item.8": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -4255,6 +4313,68 @@
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
             "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "kristian",
+            "uuid": "02f8b76b-04c7-4cf3-91f4-e957f8ae048b",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/Lokale Bilder/wuensche/cut/kristian3/kristian3.mp4",
+                "looping": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Chroma Key",
+                    "uuid": "7f095002-601f-4387-a972-51a6c914def1",
+                    "id": "chroma_key_filter",
+                    "versioned_id": "chroma_key_filter_v2",
+                    "settings": {},
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 536870916,
@@ -4792,7 +4912,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 11,
+                "id_counter": 14,
                 "items": [
                     {
                         "name": "dancing_mam",
@@ -5072,7 +5192,7 @@
                     {
                         "name": "outro_txt",
                         "source_uuid": "ea9686e7-bce1-4a37-9201-6f270c161af7",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5090,20 +5210,20 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 650.0,
-                            "y": -2134.0
+                            "x": 451.0,
+                            "y": 1085.0
                         },
                         "pos_rel": {
-                            "x": -0.5740740895271301,
-                            "y": -4.951851844787598
+                            "x": -0.9425926208496094,
+                            "y": 1.0092592239379883
                         },
                         "scale": {
-                            "x": 0.2879999876022339,
-                            "y": 0.2879999876022339
+                            "x": 0.4740000069141388,
+                            "y": 0.4740000069141388
                         },
                         "scale_rel": {
-                            "x": 0.2879999876022339,
-                            "y": 0.2879999876022339
+                            "x": 0.4740000069141388,
+                            "y": 0.4740000069141388
                         },
                         "bounds": {
                             "x": 0.0,
@@ -5178,6 +5298,116 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "test",
+                        "source_uuid": "ea6976de-7c87-404e-8283-4ef4e9c34605",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 13,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 449.0,
+                            "y": 1080.0
+                        },
+                        "pos_rel": {
+                            "x": -0.9462962746620178,
+                            "y": 1.0
+                        },
+                        "scale": {
+                            "x": 0.9740740656852722,
+                            "y": 0.9739999771118164
+                        },
+                        "scale_rel": {
+                            "x": 0.9740740656852722,
+                            "y": 0.9739999771118164
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "credits",
+                        "source_uuid": "0c7578ea-0fee-4fc3-8567-b1f556dbd836",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 14,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -5202,12 +5432,6 @@
                 "Dia_kombi_03_aus Hold": [],
                 "Video_ein": [],
                 "Video_ein Hold": [],
-                "Sprachnachrichten_aus_1": [],
-                "Sprachnachrichten_aus_1 Hold": [],
-                "Sprachnachrichten_aus_2": [],
-                "Sprachnachrichten_aus_2 Hold": [],
-                "Sprachnachrichten_ein_1": [],
-                "Sprachnachrichten_ein_1 Hold": [],
                 "outro_text_nach_unten": [],
                 "outro_text_nach_unten Hold": [],
                 "outro_text_nach_oben": [],
@@ -5235,7 +5459,11 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": []
+                "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -5383,109 +5611,6 @@
                 },
                 {
                     "prev_ver": 536870916,
-                    "name": "Sprachnachrichten_aus_1",
-                    "uuid": "83752df9-664e-48a6-9992-0321ca9251a5",
-                    "id": "move_action_filter",
-                    "versioned_id": "move_action_filter",
-                    "settings": {
-                        "custom_duration": true,
-                        "action": 3,
-                        "canvas": "Main",
-                        "scene": "outro",
-                        "sceneitem": "sprachnachrichten",
-                        "enable": 1,
-                        "start_trigger": 1,
-                        "simultaneous_move": "",
-                        "next_move": "Sprachnachrichten_aus_2",
-                        "duration": 0
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 536870916,
-                    "name": "Sprachnachrichten_aus_2",
-                    "uuid": "027b5946-6f8e-4536-bc56-86cbbced5db2",
-                    "id": "move_action_filter",
-                    "versioned_id": "move_action_filter",
-                    "settings": {
-                        "custom_duration": true,
-                        "action": 3,
-                        "canvas": "Main",
-                        "scene": "outro",
-                        "sceneitem": "sprachnachrichten",
-                        "enable": 1,
-                        "start_trigger": 0,
-                        "simultaneous_move": "",
-                        "next_move": "Sprachnachrichten_ein_1",
-                        "duration": 3000
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 536870916,
-                    "name": "Sprachnachrichten_ein_1",
-                    "uuid": "5cb2e1ab-1cce-4063-8154-fc6d5393108a",
-                    "id": "move_action_filter",
-                    "versioned_id": "move_action_filter",
-                    "settings": {
-                        "custom_duration": true,
-                        "action": 3,
-                        "canvas": "Main",
-                        "scene": "outro",
-                        "sceneitem": "sprachnachrichten",
-                        "next_move": "",
-                        "end_action": 0,
-                        "duration": 0
-                    },
-                    "mixers": 0,
-                    "sync": 0,
-                    "flags": 0,
-                    "volume": 1.0,
-                    "balance": 0.5,
-                    "enabled": false,
-                    "muted": false,
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "hotkeys": {},
-                    "deinterlace_mode": 0,
-                    "deinterlace_field_order": 0,
-                    "monitoring_type": 0,
-                    "private_settings": {}
-                },
-                {
-                    "prev_ver": 536870916,
                     "name": "outro_text_nach_unten",
                     "uuid": "8ec4f9f1-0b98-4cf4-b268-81b02be49e03",
                     "id": "move_source_filter",
@@ -5495,15 +5620,15 @@
                         "rot": 0.0,
                         "rot_sign": " ",
                         "pos": {
-                            "x": 650.0,
+                            "x": 451.0,
                             "x_sign": " ",
-                            "y": 1095.0,
+                            "y": 1085.0,
                             "y_sign": " "
                         },
                         "scale": {
-                            "x": 0.2879999876022339,
+                            "x": 0.4740000069141388,
                             "x_sign": " ",
-                            "y": 0.2879999876022339,
+                            "y": 0.4740000069141388,
                             "y_sign": " "
                         },
                         "bounds": {
@@ -5522,11 +5647,11 @@
                             "bottom": 0.0,
                             "bottom_sign": " "
                         },
-                        "start_trigger": 1,
-                        "next_move": "outro_text_nach_oben",
+                        "start_trigger": 2,
+                        "next_move": "",
                         "end_delay": 0,
                         "change_visibility": 5,
-                        "transform_text": "pos: x 650.0 y 1095.0 rot: 0.0 scale: x 0.288 y 0.288 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 451.0 y 1085.0 rot: 0.0 scale: x 0.474 y 0.474 crop: l 0 t 0 r 0 b 0",
                         "duration": 3000,
                         "custom_duration": false,
                         "easing_match": 0
@@ -5591,11 +5716,11 @@
                         "start_delay": 3000,
                         "next_move": "Video_aus",
                         "change_visibility": 1,
-                        "transform_text": "pos: x 650.0 y -2134.0 rot: 0.0 scale: x 0.288 y 0.288 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 35000,
                         "custom_duration": true,
                         "easing_match": 0,
-                        "easing_function_match": 2
+                        "easing_function_match": 2,
+                        "transform_text": "pos: x 650.0 y -2134.0 rot: 0.0 scale: x 0.288 y 0.288 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -5627,7 +5752,7 @@
                         "scene": "outro",
                         "sceneitem": "outro_txt",
                         "enable": 0,
-                        "start_trigger": 1,
+                        "start_trigger": 0,
                         "next_move": "",
                         "duration": 0
                     },
@@ -5783,7 +5908,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 34,
+                "id_counter": 39,
                 "custom_size": false,
                 "items": [
                     {
@@ -7292,20 +7417,295 @@
                         "id": 34,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 648.0,
-                            "y": 409.0
+                            "x": 980.0,
+                            "y": 540.0
                         },
                         "pos_rel": {
-                            "x": -0.577838122844696,
-                            "y": -0.24227309226989746
+                            "x": 0.03703703731298447,
+                            "y": 0.0
                         },
                         "scale": {
-                            "x": 0.9914648532867432,
-                            "y": 0.991023600101471
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.9914648532867432,
-                            "y": 0.991023600101471
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "vid_isa",
+                        "source_uuid": "bdbfe24c-cf2a-4644-bc04-5301bcf33eba",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 90.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 35,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1717.0,
+                            "y": 60.0
+                        },
+                        "pos_rel": {
+                            "x": 1.4018518924713135,
+                            "y": -0.8888888955116272
+                        },
+                        "scale": {
+                            "x": 1.501562476158142,
+                            "y": 1.5020833015441895
+                        },
+                        "scale_rel": {
+                            "x": 1.501562476158142,
+                            "y": 1.5020833015441895
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "txt_isa",
+                        "source_uuid": "fc7bf8b0-564a-4788-a7f3-8c2cbbb643c5",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 36,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 626.0,
+                            "y": 295.0
+                        },
+                        "pos_rel": {
+                            "x": -0.6185185313224792,
+                            "y": -0.45370370149612427
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "vid_anja",
+                        "source_uuid": "b1e58da2-dd9f-4ffa-bc2b-30e250569e36",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 37,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 566.5,
+                            "y": 15.5
+                        },
+                        "pos_rel": {
+                            "x": -0.7287036776542664,
+                            "y": -0.9712963104248047
+                        },
+                        "scale": {
+                            "x": 1.6395833492279053,
+                            "y": 1.639062523841858
+                        },
+                        "scale_rel": {
+                            "x": 1.6395833492279053,
+                            "y": 1.639062523841858
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "txt_kristian",
+                        "source_uuid": "988d596d-bf1d-4af5-920c-afeb46f35866",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 38,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1311.0,
+                            "y": 440.0
+                        },
+                        "pos_rel": {
+                            "x": 0.6499999761581421,
+                            "y": -0.18518519401550293
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "txt_anja",
+                        "source_uuid": "a7a95af4-286a-44ad-ae7a-f3fd63948283",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 39,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 26.0,
+                            "y": 220.0
+                        },
+                        "pos_rel": {
+                            "x": -1.729629635810852,
+                            "y": -0.5925925970077515
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_rel": {
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -7407,6 +7807,40 @@
                 "guenter_02 Hold": [],
                 "guenter_03": [],
                 "guenter_03 Hold": [],
+                "chrisse_01": [],
+                "chrisse_01 Hold": [],
+                "chrisse_02": [],
+                "chrisse_02 Hold": [],
+                "chrisse_03": [],
+                "chrisse_03 Hold": [],
+                "bg_tanja": [],
+                "bg_tanja Hold": [],
+                "bg_tanja 02": [],
+                "bg_tanja 02 Hold": [],
+                "bg_tanja 03": [],
+                "bg_tanja 03 Hold": [],
+                "tanja_01": [],
+                "tanja_01 Hold": [],
+                "tanja_02": [],
+                "tanja_02 Hold": [],
+                "tanja_03": [],
+                "tanja_03 Hold": [],
+                "isa_01": [],
+                "isa_01 Hold": [],
+                "isa_02": [],
+                "isa_02 Hold": [],
+                "isa_03": [],
+                "isa_03 Hold": [],
+                "anja_01": [],
+                "anja_01 Hold": [],
+                "anja_02": [],
+                "anja_02 Hold": [],
+                "anja_02 2": [],
+                "anja_02 2 Hold": [],
+                "anja_03": [],
+                "anja_03 Hold": [],
+                "anja_03 2": [],
+                "anja_03 2 Hold": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -7455,32 +7889,24 @@
                 "libobs.hide_scene_item.28": [],
                 "libobs.show_scene_item.29": [],
                 "libobs.hide_scene_item.29": [],
-                "chrisse_01": [],
-                "chrisse_01 Hold": [],
-                "chrisse_02": [],
-                "chrisse_02 Hold": [],
-                "chrisse_03": [],
-                "chrisse_03 Hold": [],
                 "libobs.show_scene_item.30": [],
                 "libobs.hide_scene_item.30": [],
                 "libobs.show_scene_item.31": [],
                 "libobs.hide_scene_item.31": [],
                 "libobs.show_scene_item.33": [],
                 "libobs.hide_scene_item.33": [],
-                "bg_tanja": [],
-                "bg_tanja Hold": [],
-                "tanja_01": [],
-                "tanja_01 Hold": [],
-                "tanja_02": [],
-                "tanja_02 Hold": [],
-                "tanja_03": [],
-                "tanja_03 Hold": [],
                 "libobs.show_scene_item.34": [],
                 "libobs.hide_scene_item.34": [],
-                "bg_tanja 02": [],
-                "bg_tanja 02 Hold": [],
-                "bg_tanja 03": [],
-                "bg_tanja 03 Hold": []
+                "libobs.show_scene_item.35": [],
+                "libobs.hide_scene_item.35": [],
+                "libobs.show_scene_item.36": [],
+                "libobs.hide_scene_item.36": [],
+                "libobs.show_scene_item.37": [],
+                "libobs.hide_scene_item.37": [],
+                "libobs.show_scene_item.38": [],
+                "libobs.hide_scene_item.38": [],
+                "libobs.show_scene_item.39": [],
+                "libobs.hide_scene_item.39": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -7571,8 +7997,8 @@
                         "end_delay": 1500,
                         "next_move": "alex_03",
                         "change_visibility": 1,
-                        "transform_text": "pos: x 388.5 y 933.5 rot: 0.0 scale: x 0.358 y 0.360 crop: l 0 t 0 r 0 b 0",
                         "source": "txt_alex_jenny",
+                        "transform_text": "pos: x 388.5 y 933.5 rot: 0.0 scale: x 0.358 y 0.360 bounds: x 1.000 y 1.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -7632,9 +8058,9 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_alex_jenny",
-                        "transform_text": "pos: x 386.5 y 899.5 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "start_delay": 40000,
-                        "duration": 1500
+                        "duration": 1500,
+                        "transform_text": "pos: x 386.5 y 899.5 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -7862,7 +8288,6 @@
                     "id": "move_source_filter",
                     "versioned_id": "move_source_filter",
                     "settings": {
-                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.381 y 0.383 crop: l 0 t 0 r 0 b 0",
                         "rot": 0.0,
                         "rot_sign": " ",
                         "pos": {
@@ -7897,6 +8322,7 @@
                         "next_move": "schimpf_03",
                         "change_visibility": 1,
                         "source": "txt_schimpf",
+                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.381 y 0.383 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -7956,8 +8382,8 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_schimpf",
-                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "start_delay": 0,
+                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -8057,7 +8483,7 @@
                         "end_delay": 1500,
                         "next_move": "teanzer_03",
                         "change_visibility": 1,
-                        "transform_text": "pos: x 232.0 y 914.0 rot: 0.0 scale: x 0.381 y 0.383 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 232.0 y 914.0 rot: 0.0 scale: x 0.381 y 0.383 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -8117,8 +8543,8 @@
                         "source": "txt_taenzer",
                         "next_move": "",
                         "change_visibility": 2,
-                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "start_delay": 7000,
+                        "transform_text": "pos: x 233.0 y 915.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -8217,8 +8643,8 @@
                         "end_delay": 1500,
                         "next_move": "tyla_03",
                         "change_visibility": 1,
-                        "transform_text": "pos: x 227.0 y 190.0 rot: 0.0 scale: x 0.342 y 0.343 crop: l 0 t 0 r 0 b 0",
                         "source": "txt_tyla_koba",
+                        "transform_text": "pos: x 227.0 y 190.0 rot: 0.0 scale: x 0.342 y 0.343 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -8278,7 +8704,7 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_tyla_koba",
-                        "transform_text": "pos: x 227.0 y 190.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 227.0 y 190.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -8377,8 +8803,8 @@
                         "end_delay": 1500,
                         "change_visibility": 1,
                         "source": "txt_mueller",
-                        "transform_text": "pos: x 82.0 y 462.0 rot: 0.0 scale: x 0.353 y 0.352 crop: l 0 t 0 r 0 b 0",
                         "next_move": "mueller_03",
+                        "transform_text": "pos: x 82.0 y 462.0 rot: 0.0 scale: x 0.353 y 0.352 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -8438,7 +8864,7 @@
                         "next_move": "",
                         "change_visibility": 2,
                         "source": "txt_mueller",
-                        "transform_text": "pos: x 82.0 y 462.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 82.0 y 462.0 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -9121,8 +9547,8 @@
                         "sceneitem": "vid_guenter",
                         "end_sceneitem": "vid_guenter",
                         "simultaneous_move": "guenter_02",
-                        "duration": 44000,
-                        "next_move": "chrisse_01"
+                        "next_move": "chrisse_01",
+                        "duration": 44000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9243,8 +9669,8 @@
                         "change_visibility": 2,
                         "start_delay": 40000,
                         "source": "txt_guenter",
-                        "duration": 1500,
-                        "transform_text": "pos: x 1388.0 y 440.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 1388.0 y 440.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9282,8 +9708,8 @@
                         "sceneitem": "vid_chrisse",
                         "end_sceneitem": "vid_chrisse",
                         "simultaneous_move": "chrisse_02",
-                        "duration": 10000,
-                        "next_move": ""
+                        "next_move": "isa_01",
+                        "duration": 10000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9343,8 +9769,8 @@
                         "change_visibility": 1,
                         "source": "txt_chrisse",
                         "next_move": "chrisse_03",
-                        "duration": 1500,
-                        "transform_text": "pos: x 888.0 y 333.0 rot: 0.0 scale: x 0.551 y 0.550 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 888.0 y 333.0 rot: 0.0 scale: x 0.551 y 0.550 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9404,8 +9830,8 @@
                         "change_visibility": 2,
                         "start_delay": 5000,
                         "source": "txt_chrisse",
-                        "duration": 1500,
-                        "transform_text": "pos: x 888.0 y 333.0 rot: 0.0 scale: x 000 y 00 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 888.0 y 333.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9442,10 +9868,10 @@
                         "end_enable": 1,
                         "sceneitem": "bg_tanja",
                         "end_sceneitem": "bg_tanja",
-                        "duration": 32000,
                         "next_move": "tanja_01",
                         "simultaneous_move": "bg_tanja 02",
-                        "start_trigger": 1
+                        "start_trigger": 1,
+                        "duration": 32000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9505,8 +9931,8 @@
                         "change_visibility": 1,
                         "source": "txt_gisela",
                         "transform_text": "pos: x 227.5 y 243.5 rot: 0.0 scale: x 2.247 y 2.246 crop: l 0 t 0 r 0 b 0",
-                        "duration": 28000,
                         "next_move": "bg_tanja 03",
+                        "duration": 28000,
                         "easing_match": 1
                     },
                     "mixers": 0,
@@ -9567,8 +9993,8 @@
                         "change_visibility": 2,
                         "start_delay": 0,
                         "source": "txt_gisela",
-                        "duration": 1500,
-                        "transform_text": "pos: x 980 y 540 rot: 0.0 scale: x 0 y 0 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 980.0 y 540.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9606,8 +10032,8 @@
                         "sceneitem": "vid_tanja",
                         "end_sceneitem": "vid_tanja",
                         "simultaneous_move": "tanja_02",
-                        "duration": 3000,
-                        "next_move": "alex_01"
+                        "next_move": "alex_01",
+                        "duration": 3000
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9667,8 +10093,8 @@
                         "change_visibility": 1,
                         "source": "txt_tanja",
                         "next_move": "tanja_03",
-                        "duration": 500,
-                        "transform_text": "pos: x 287.0 y 69.0 rot: 0.0 scale: x 0.468 y 0.466 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 287.0 y 69.0 rot: 0.0 scale: x 0.468 y 0.466 crop: l 0 t 0 r 0 b 0",
+                        "duration": 500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9728,8 +10154,820 @@
                         "change_visibility": 2,
                         "start_delay": 500,
                         "source": "txt_tanja",
-                        "duration": 1000,
-                        "transform_text": "pos: x 287.0 y 69.0 rot: 0.0 scale: x 0. y 0. crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 287.0 y 69.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1000
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "isa_01",
+                    "uuid": "f8f9947a-8935-49cb-bc4d-df593d4ba9da",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "custom_duration": true,
+                        "action": 3,
+                        "canvas": "Main",
+                        "scene": "outro_gruese",
+                        "enable": 0,
+                        "end_action": 3,
+                        "end_canvas": "Main",
+                        "end_scene": "outro_gruese",
+                        "end_enable": 1,
+                        "sceneitem": "vid_isa",
+                        "end_sceneitem": "vid_isa",
+                        "simultaneous_move": "isa_02",
+                        "next_move": "anja_01",
+                        "duration": 5500
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "isa_02",
+                    "uuid": "3e8ead7a-7c84-4986-a137-c2cbf5887243",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 626.0,
+                            "x_sign": " ",
+                            "y": 295.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.6100000143051147,
+                            "x_sign": " ",
+                            "y": 0.6100000143051147,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "end_delay": 1500,
+                        "change_visibility": 1,
+                        "source": "txt_isa",
+                        "next_move": "isa_03",
+                        "transform_text": "pos: x 626.0 y 295.0 rot: 0.0 scale: x 0.610 y 0.610 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "isa_03",
+                    "uuid": "c85e939a-a4c9-4980-b695-d1989b6af2dc",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 626.0,
+                            "x_sign": " ",
+                            "y": 295.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "next_move": "",
+                        "change_visibility": 2,
+                        "start_delay": 500,
+                        "source": "txt_isa",
+                        "duration": 1500,
+                        "transform_text": "pos: x 626.0 y 295.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "anja_01",
+                    "uuid": "eeef964b-f40e-499b-a6cd-2ef53e53722b",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "custom_duration": true,
+                        "action": 3,
+                        "canvas": "Main",
+                        "scene": "outro_gruese",
+                        "enable": 0,
+                        "end_action": 3,
+                        "end_canvas": "Main",
+                        "end_scene": "outro_gruese",
+                        "end_enable": 1,
+                        "next_move": "",
+                        "sceneitem": "vid_anja",
+                        "end_sceneitem": "vid_anja",
+                        "simultaneous_move": "anja_02",
+                        "duration": 30000
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "anja_02",
+                    "uuid": "167bdd35-8544-4fc1-a0be-f1cee16153f4",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 1311.0,
+                            "x_sign": " ",
+                            "y": 440.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.6779999732971191,
+                            "x_sign": " ",
+                            "y": 0.6779999732971191,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "end_delay": 1500,
+                        "change_visibility": 1,
+                        "source": "txt_kristian",
+                        "transform_text": "pos: x 1311.0 y 440.0 rot: 0.0 scale: x 0.678 y 0.678 crop: l 0 t 0 r 0 b 0",
+                        "start_delay": 0,
+                        "simultaneous_move": "anja_02 2",
+                        "next_move": "anja_03",
+                        "duration": 1500
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "anja_02 2",
+                    "uuid": "d1bab65e-c1a2-49af-bdc9-9e1ff97f7d5d",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 26.0,
+                            "x_sign": " ",
+                            "y": 220.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.48500001430511475,
+                            "x_sign": " ",
+                            "y": 0.48500001430511475,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "end_delay": 1500,
+                        "change_visibility": 1,
+                        "source": "txt_anja",
+                        "transform_text": "pos: x 26.0 y 220.0 rot: 0.0 scale: x 0.485 y 0.485 crop: l 0 t 0 r 0 b 0",
+                        "start_delay": 15000,
+                        "next_move": "anja_03 2",
+                        "duration": 1500
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "anja_03",
+                    "uuid": "ebaf1836-7237-4564-8d7b-00de41b583de",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 1311.0,
+                            "x_sign": " ",
+                            "y": 440.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "next_move": "",
+                        "change_visibility": 2,
+                        "start_delay": 26000,
+                        "source": "txt_kristian",
+                        "simultaneous_move": "",
+                        "duration": 1500,
+                        "transform_text": "pos: x 1311.0 y 440.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "anja_03 2",
+                    "uuid": "8cc2af69-8b3c-4475-9110-812cb7ce7cb5",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 26.0,
+                            "x_sign": " ",
+                            "y": 220.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "next_move": "",
+                        "change_visibility": 2,
+                        "start_delay": 11000,
+                        "source": "txt_anja",
+                        "duration": 1500,
+                        "transform_text": "pos: x 26.0 y 220.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "outro_neu",
+            "uuid": "ad0dcbef-c7c4-4117-9c1e-2a76bacd868a",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 4,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "dancing_mam",
+                        "source_uuid": "204a845c-5053-4e5f-b21c-48457d13c5a6",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 2,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 44.0,
+                            "y": 425.0
+                        },
+                        "pos_rel": {
+                            "x": -1.6962963342666626,
+                            "y": -0.21296298503875732
+                        },
+                        "scale": {
+                            "x": 0.5445312261581421,
+                            "y": 0.5444444417953491
+                        },
+                        "scale_rel": {
+                            "x": 0.5445312261581421,
+                            "y": 0.5444444417953491
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "credits",
+                        "source_uuid": "0c7578ea-0fee-4fc3-8567-b1f556dbd836",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "dia_outro",
+                        "source_uuid": "a801cf27-710b-4da6-8700-b7cfc6408ef1",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 3,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": [],
+                "disable_dia": [],
+                "disable_dia Hold": [],
+                "hide_dia": [],
+                "hide_dia Hold": [],
+                "show_dia": [],
+                "show_dia Hold": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "disable_dia",
+                    "uuid": "28f64313-1b98-4cbf-848a-57fa2f4f7ddb",
+                    "id": "move_action_filter",
+                    "versioned_id": "move_action_filter",
+                    "settings": {
+                        "custom_duration": true,
+                        "action": 3,
+                        "canvas": "Main",
+                        "scene": "outro_neu",
+                        "sceneitem": "dia_outro",
+                        "enable": 1,
+                        "start_trigger": 2
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "hide_dia",
+                    "uuid": "c7f56f00-aa49-4c65-ad12-be78cdce7972",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "transform_text": "pos: x 960.0 y 540 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 00",
+                        "source": "dia_outro",
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 960.0,
+                            "x_sign": " ",
+                            "y": 540.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "duration": 0,
+                        "start_trigger": 2
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": false,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                },
+                {
+                    "prev_ver": 536870916,
+                    "name": "show_dia",
+                    "uuid": "c041bdc9-1876-4c96-b57e-55665ee82d96",
+                    "id": "move_source_filter",
+                    "versioned_id": "move_source_filter",
+                    "settings": {
+                        "transform_text": "pos: x 138.0 y 78.0 rot: 0.0 scale: x 0.856 y 0.856 crop: l 0 t 0 r 0 b 0",
+                        "source": "dia_outro",
+                        "rot": 0.0,
+                        "rot_sign": " ",
+                        "pos": {
+                            "x": 138.0,
+                            "x_sign": " ",
+                            "y": 78.0,
+                            "y_sign": " "
+                        },
+                        "scale": {
+                            "x": 0.8560000061988831,
+                            "x_sign": " ",
+                            "y": 0.8560000061988831,
+                            "y_sign": " "
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "x_sign": " ",
+                            "y": 0.0,
+                            "y_sign": " "
+                        },
+                        "crop": {
+                            "left": 0.0,
+                            "left_sign": " ",
+                            "top": 0.0,
+                            "top_sign": " ",
+                            "right": 0.0,
+                            "right_sign": " ",
+                            "bottom": 0.0,
+                            "bottom_sign": " "
+                        },
+                        "start_delay": 120000,
+                        "duration": 3000,
+                        "easing_match": 2,
+                        "start_trigger": 1,
+                        "change_visibility": 1
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -9796,7 +11034,7 @@
                         "limit_cy": false,
                         "speed_y": 500,
                         "cy": 3620,
-                        "loop": true
+                        "loop": false
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -10057,7 +11295,7 @@
             "mixers": 254,
             "sync": 0,
             "flags": 0,
-            "volume": 1.0,
+            "volume": 0.05951910838484764,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -10522,20 +11760,20 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -10703,7 +11941,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -10762,8 +12000,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11200,19 +12438,19 @@
                         "id": 10,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.061319611966609955,
+                            "x": -0.018455496057868004,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": -0.061319611966609955,
+                            "x": -0.018455496057868004,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -11375,7 +12613,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -11434,8 +12672,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -11872,20 +13110,20 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -12047,7 +13285,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -12106,8 +13344,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -12532,20 +13770,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -12997,7 +14235,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -13056,8 +14294,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -13384,20 +14622,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -13848,7 +15086,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -13907,8 +15145,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -15223,20 +16461,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -15565,7 +16803,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -15624,8 +16862,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -15897,19 +17135,19 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.061319611966609955,
+                            "x": -0.018455496057868004,
                             "y": 0.06300000101327896
                         },
                         "scale_rel": {
-                            "x": -0.061319611966609955,
+                            "x": -0.018455496057868004,
                             "y": 0.06300000101327896
                         },
                         "bounds": {
@@ -16424,7 +17662,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -16483,8 +17721,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -18318,20 +19556,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -18660,7 +19898,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -18719,8 +19957,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -19472,20 +20710,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -19814,7 +21052,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -19873,8 +21111,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -20201,20 +21439,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -20486,7 +21724,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -20545,8 +21783,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -20873,20 +22111,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -21215,7 +22453,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -21274,8 +22512,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -21602,20 +22840,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -21944,7 +23182,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -22003,8 +23241,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -22983,12 +24221,12 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
                 "libobs.show_scene_item.11": [],
                 "libobs.hide_scene_item.11": [],
                 "libobs.show_scene_item.12": [],
-                "libobs.hide_scene_item.12": [],
-                "libobs.show_scene_item.13": [],
-                "libobs.hide_scene_item.13": []
+                "libobs.hide_scene_item.12": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -23305,20 +24543,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -23590,7 +24828,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -23649,8 +24887,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -23977,20 +25215,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -24319,7 +25557,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -24378,8 +25616,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -26782,7 +28020,6 @@
                     "id": "move_source_filter",
                     "versioned_id": "move_source_filter",
                     "settings": {
-                        "transform_text": "pos: x 368.5 y 96.5 rot: 0.0 scale: x 0.296 y 0.296 crop: l 0 t 0 r 0 b 0",
                         "rot": 0.0,
                         "rot_sign": " ",
                         "pos": {
@@ -26821,7 +28058,8 @@
                         "change_order": 0,
                         "simultaneous_move": "",
                         "duration": 1500,
-                        "easing_function_match": 2
+                        "easing_function_match": 2,
+                        "transform_text": "pos: x 368.5 y 96.5 rot: 0.0 scale: x 0.296 y 0.296 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -26917,10 +28155,10 @@
                         "start_delay": 0,
                         "change_order": 0,
                         "simultaneous_move": "",
-                        "transform_text": "pos: x 368.5 y 96.5 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500,
                         "custom_duration": false,
-                        "easing_function_match": 2
+                        "easing_function_match": 2,
+                        "transform_text": "pos: x 368.5 y 96.5 rot: 0.0 scale: x 0.000 y 0.000 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -28213,20 +29451,20 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -28452,7 +29690,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -28511,8 +29749,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -29212,20 +30450,20 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 643.5,
+                            "x": 629.5,
                             "y": 980.0
                         },
                         "pos_rel": {
-                            "x": -0.5865175724029541,
-                            "y": 0.8148149251937866
+                            "x": -0.6121233701705933,
+                            "y": 0.8148148059844971
                         },
                         "scale": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "scale_rel": {
-                            "x": -0.06181687116622925,
-                            "y": 0.0630909726023674
+                            "x": -0.01877991296350956,
+                            "y": 0.06305935233831406
                         },
                         "bounds": {
                             "x": 0.0,
@@ -29444,7 +30682,7 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "transform_text": "pos: x 603.5 y 980.0 rot: 0.0 scale: x 0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0",
                         "duration": 1500
                     },
                     "mixers": 0,
@@ -29503,8 +30741,8 @@
                             "y_sign": " "
                         },
                         "source": "shamrock",
-                        "duration": 1500,
-                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 bounds: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
+                        "transform_text": "pos: x 643.5 y 980.0 rot: 0.0 scale: x -0.062 y 0.063 crop: l 0 t 0 r 0 b 0",
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -29825,6 +31063,14 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "enkel_01-1": [],
+                "enkel_01-1 Hold": [],
+                "enkel_02-1": [],
+                "enkel_02-1 Hold": [],
+                "enkel_01-2": [],
+                "enkel_01-2 Hold": [],
+                "enkel_02-2": [],
+                "enkel_02-2 Hold": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -29834,15 +31080,7 @@
                 "libobs.show_scene_item.5": [],
                 "libobs.hide_scene_item.5": [],
                 "libobs.show_scene_item.6": [],
-                "libobs.hide_scene_item.6": [],
-                "enkel_01-1": [],
-                "enkel_01-1 Hold": [],
-                "enkel_02-1": [],
-                "enkel_02-1 Hold": [],
-                "enkel_01-2": [],
-                "enkel_01-2 Hold": [],
-                "enkel_02-2": [],
-                "enkel_02-2 Hold": []
+                "libobs.hide_scene_item.6": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -29892,11 +31130,11 @@
                             "bottom": 0.0,
                             "bottom_sign": " "
                         },
-                        "duration": 1500,
                         "change_visibility": 1,
                         "next_move": "enkel_02-1",
                         "start_delay": 7000,
-                        "start_trigger": 1
+                        "start_trigger": 1,
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -29954,8 +31192,8 @@
                             "bottom": 0.0,
                             "bottom_sign": " "
                         },
-                        "duration": 1500,
-                        "change_visibility": 1
+                        "change_visibility": 1,
+                        "duration": 1500
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -29981,7 +31219,6 @@
                     "id": "move_source_filter",
                     "versioned_id": "move_source_filter",
                     "settings": {
-                        "transform_text": "pos: x 379.0 y 640.0 rot: 0.0 scale: x 0 y 0. crop: l 0 t 0 r 0 b 0",
                         "source": "enkel_01",
                         "rot": 0.0,
                         "rot_sign": " ",
@@ -30013,7 +31250,8 @@
                             "bottom": 0.0,
                             "bottom_sign": " "
                         },
-                        "start_trigger": 2
+                        "start_trigger": 2,
+                        "transform_text": "pos: x 379.0 y 640.0 rot: 0.0 scale: x 0.000 y 0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -30039,7 +31277,6 @@
                     "id": "move_source_filter",
                     "versioned_id": "move_source_filter",
                     "settings": {
-                        "transform_text": "pos: x 1550.0 y 640.0 rot: 0.0 scale: x -0.00 y -0.00 crop: l 0 t 0 r 0 b 0",
                         "source": "enkel_02",
                         "rot": 0.0,
                         "rot_sign": " ",
@@ -30071,7 +31308,8 @@
                             "bottom": 0.0,
                             "bottom_sign": " "
                         },
-                        "start_trigger": 2
+                        "start_trigger": 2,
+                        "transform_text": "pos: x 1550.0 y 640.0 rot: 0.0 scale: x -0.000 y -0.000 crop: l 0 t 0 r 0 b 0"
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -30099,13 +31337,13 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 2,
+                "id_counter": 5,
                 "custom_size": false,
                 "items": [
                     {
                         "name": "bg_video",
                         "source_uuid": "2b066b83-941a-414b-8ca1-d8c95bd0ac90",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -30160,7 +31398,7 @@
                     {
                         "name": "weichzeichner",
                         "source_uuid": "68e9367d-1fb3-4210-99bc-da2df752d7ae",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -30243,12 +31481,79 @@
         },
         {
             "prev_ver": 536870916,
+            "name": "test",
+            "uuid": "ea6976de-7c87-404e-8283-4ef4e9c34605",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "read_from_file": true,
+                "file": "C:/Git/mumgb/OBS/assets/src/outro.txt",
+                "chatlog": false,
+                "extents": true,
+                "font": {
+                    "face": "Arial",
+                    "style": "Regular",
+                    "size": 72,
+                    "flags": 0
+                },
+                "align": "center",
+                "chatlog_lines": 67,
+                "extents_cx": 1080,
+                "extents_cy": 6000,
+                "antialiasing": false
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
             "name": "txt_alex_jenny",
             "uuid": "0e8a4122-34b4-4763-a325-d039d5920c21",
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "text": "Isabella, Alex, Yvonne, Jennifer"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "txt_anja",
+            "uuid": "a7a95af4-286a-44ad-ae7a-f3fd63948283",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "Lasse\nAnja\nLena\n\nund Mikosch",
+                "align": "right"
             },
             "mixers": 0,
             "sync": 0,
@@ -30347,12 +31652,64 @@
         },
         {
             "prev_ver": 536870916,
+            "name": "txt_isa",
+            "uuid": "fc7bf8b0-564a-4788-a7f3-8c2cbbb643c5",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "Isa\n&\nMichi"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
             "name": "txt_jasmin",
             "uuid": "4f0926ae-19d9-47ee-90ed-4ebf4f008e2d",
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "text": "Jasmin\nLilli\nMailo\nMarlon\n&\nMarcel"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "txt_kristian",
+            "uuid": "988d596d-bf1d-4af5-920c-afeb46f35866",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "Kristian"
             },
             "mixers": 0,
             "sync": 0,
@@ -30908,6 +32265,41 @@
         },
         {
             "prev_ver": 536870916,
+            "name": "vid_anja",
+            "uuid": "b1e58da2-dd9f-4ffa-bc2b-30e250569e36",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/Lokale Bilder/wuensche/anja_kristian.mp4"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 2,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
             "name": "vid_chrisse",
             "uuid": "1c5f9c25-8e13-4185-9cbb-38ab74a1f3cc",
             "id": "ffmpeg_source",
@@ -30949,6 +32341,41 @@
             "versioned_id": "ffmpeg_source",
             "settings": {
                 "local_file": "C:/Lokale Bilder/wuensche/guenter_nane.mp4"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 2,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870916,
+            "name": "vid_isa",
+            "uuid": "bdbfe24c-cf2a-4644-bc04-5301bcf33eba",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/Lokale Bilder/wuensche/isa.mp4"
             },
             "mixers": 255,
             "sync": 0,
@@ -31094,18 +32521,18 @@
                     "settings": {
                         "rectangle_corner_type": 1,
                         "shape_feather_type": 1,
-                        "shape_center_x": 928.0,
-                        "position_x": 960.0,
-                        "shape_center_y": 451.0,
-                        "position_y": 540.0,
-                        "mask_gradient_position": 960.0,
                         "mask_source_width": 1920,
                         "mask_source_height": 1080,
-                        "source_zoom": 310.0,
+                        "rectangle_corner_radius": 0.0,
+                        "shape_center_x": 928.0,
+                        "shape_center_y": 451.0,
+                        "shape_rotation": 0.0,
                         "rectangle_width": 3719.0,
                         "rectangle_height": 3923.0,
-                        "shape_rotation": 0.0,
-                        "rectangle_corner_radius": 0.0
+                        "position_x": 960.0,
+                        "position_y": 540.0,
+                        "source_zoom": 310.0,
+                        "mask_gradient_position": 960.0
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -31133,15 +32560,15 @@
                     "settings": {
                         "filter": "Advanced Mask",
                         "move_value_type": 1,
-                        "source_zoom": 104.0,
+                        "rectangle_corner_radius": 0.0,
+                        "start_trigger": 1,
+                        "duration": 3000,
                         "shape_center_x": 960.0,
                         "shape_center_y": 540.0,
                         "shape_rotation": 0.0,
                         "rectangle_width": 3719.0,
                         "rectangle_height": 3923.0,
-                        "rectangle_corner_radius": 0.0,
-                        "duration": 3000,
-                        "start_trigger": 1
+                        "source_zoom": 104.0
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -31169,14 +32596,14 @@
                     "settings": {
                         "filter": "Advanced Mask",
                         "move_value_type": 1,
+                        "rectangle_corner_radius": 0.0,
+                        "start_trigger": 2,
                         "shape_center_x": 928.0,
                         "shape_center_y": 451.0,
                         "shape_rotation": 0.0,
                         "rectangle_width": 3719.0,
                         "rectangle_height": 3923.0,
-                        "source_zoom": 310.0,
-                        "rectangle_corner_radius": 0.0,
-                        "start_trigger": 2
+                        "source_zoom": 310.0
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -31544,7 +32971,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 1.0,
+            "volume": 0.03756647929549217,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
